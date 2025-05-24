@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Search, Menu, X, Send, ChevronRight, MapPin, Calendar, Users, Coffee, Heart, HelpCircle, Newspaper, MessageCircle, Shield, Utensils, BookOpen, Briefcase, Globe, Music, Building, ShoppingBag, Phone, Mail, Facebook, Instagram, DollarSign, Clock, AlertCircle, ChevronLeft } from 'lucide-react';
 
-// Import the comprehensive UQU data
+// Import the comprehensive UQU data (still used for the upper panel for now)
 const UQU_DATA = {
   "organization": {
     "name": "University of Queensland Union",
@@ -133,7 +133,8 @@ const UQU_DATA = {
         "category": "Coffee Shop",
         "description": "Coffee shop providing caffeine fix for uni students, serving all favorite hot and cold beverages from mochas to matchas.",
         "mates_rates": true,
-        "location": "On campus"
+        "location": "On campus",
+        "logo": "https://uqu.com.au/wp-content/uploads/Expresso-Logo-Web-Tile-300x300.png"
       },
       {
         "id": "on_a_roll_bakery",
@@ -141,7 +142,8 @@ const UQU_DATA = {
         "category": "Bakery & Café",
         "description": "Daily stop for coffee and breakfast bites, stocked with gourmet pies, pastries, toasties, fresh wraps, sweet treats, and desserts.",
         "mates_rates": true,
-        "location": "On campus"
+        "location": "On campus",
+        "logo": "https://uqu.com.au/wp-content/uploads/On-A-Roll-Logo-Web-Tile-300x300.png"
       },
       {
         "id": "pizza_caffe",
@@ -151,7 +153,8 @@ const UQU_DATA = {
         "established": "1992",
         "mates_rates": true,
         "alcohol_service": true,
-        "location": "On campus"
+        "location": "On campus",
+        "logo": "https://uqu.com.au/wp-content/uploads/Pizza-Caffe-Logo-Web-Tile-300x300.png"
       },
       {
         "id": "redroom",
@@ -162,7 +165,8 @@ const UQU_DATA = {
         "reopening": "2025",
         "mates_rates": true,
         "alcohol_service": true,
-        "location": "Union Complex (currently closed)"
+        "location": "Union Complex (currently closed)",
+        "logo": "https://uqu.com.au/wp-content/uploads/Redroom-Logo-Web-Tile-300x300.png"
       },
       {
         "id": "main_course",
@@ -170,7 +174,8 @@ const UQU_DATA = {
         "category": "Food Court",
         "description": "Long-standing go-to for fast, fresh, tasty, and healthy meals on campus at affordable prices.",
         "mates_rates": true,
-        "location": "On campus"
+        "location": "On campus",
+        "logo": "https://uqu.com.au/wp-content/uploads/Main-Course-Logo-Web-Tile-300x300.png"
       },
       {
         "id": "darwins",
@@ -178,7 +183,8 @@ const UQU_DATA = {
         "category": "Café",
         "description": "Perfect spot for grab-and-go lunch or relaxed coffee with study buddies or colleagues.",
         "mates_rates": true,
-        "location": "On campus"
+        "location": "On campus",
+         "logo": "https://uqu.com.au/wp-content/uploads/Darwins-Logo-Web-Tile-300x300.png"
       },
       {
         "id": "lolly_shop",
@@ -187,7 +193,8 @@ const UQU_DATA = {
         "description": "Treating UQ students since 1981. Favorite for afternoon sugar fix with pick & mix lollies, exclusive gourmet products, and variety of snacks.",
         "established": "1981",
         "mates_rates": true,
-        "location": "On campus"
+        "location": "On campus",
+        "logo": "https://uqu.com.au/wp-content/uploads/LollyShop-Logo-Web-Tile-300x300.png"
       },
       {
         "id": "lawes_club",
@@ -200,7 +207,8 @@ const UQU_DATA = {
           "hours": "8pm to midnight"
         },
         "alcohol_service": true,
-        "location": "Gatton campus"
+        "location": "Gatton campus",
+        "logo": "https://uqu.com.au/wp-content/uploads/UQU-Gatton-Logo-Web-Tile-300x300.png" 
       }
     ],
     "services": [
@@ -221,7 +229,8 @@ const UQU_DATA = {
         "category": "Thrift Store",
         "description": "Budget-friendly retail shopping with pre-loved clothing, accessories, books, and magazines.",
         "mates_rates": true,
-        "location": "On campus"
+        "location": "On campus",
+        "logo": "https://uqu.com.au/wp-content/uploads/OpShop-Logo-Web-Tile-300x300.png"
       },
       {
         "id": "wednesday_markets",
@@ -232,7 +241,8 @@ const UQU_DATA = {
           "day": "Every Wednesday",
           "location": "Campbell Place"
         },
-        "location": "Campbell Place"
+        "location": "Campbell Place",
+        "logo": "https://uqu.com.au/wp-content/uploads/Market-Icon.png"
       },
       {
         "id": "uqu_etc",
@@ -240,7 +250,8 @@ const UQU_DATA = {
         "category": "University Retail",
         "description": "One-stop shop for all uni needs selling UQU merchandise, stationery, phone accessories, lab coats, USBs, calculators, and graduation gifts.",
         "mates_rates": true,
-        "location": "On campus"
+        "location": "On campus",
+        "logo": "https://uqu.com.au/wp-content/uploads/ETC-Logo-Web-Tile-300x300.png"
       }
     ]
   },
@@ -461,7 +472,7 @@ const UQU_DATA = {
   }
 };
 
-// Icon mapping for main categories
+// Icon mapping for main categories (still used for upper panel)
 const categoryIcons = {
   "support": Heart,
   "collectives": Users,
@@ -472,7 +483,7 @@ const categoryIcons = {
   "contact": Phone
 };
 
-// Icon mapping for specific services
+// Icon mapping for specific services (still used for upper panel)
 const serviceIcons = {
   "sas": Shield,
   "food_co_op": Utensils,
@@ -485,13 +496,20 @@ const serviceIcons = {
   "welfare": Heart
 };
 
+// Define a type for individual messages
+interface Message {
+  type: 'user' | 'bot';
+  content: string;
+  suggestions?: string[]; // Optional suggestions array
+}
+
 export default function UQUAssistant() {
   const [dividerPosition, setDividerPosition] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState(null);
-  const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null); // Explicitly type
+  const [selectedItem, setSelectedItem] = useState<any | null>(null); // Type appropriately later
   const [searchQuery, setSearchQuery] = useState('');
-  const [messages, setMessages] = useState([
+  const [messages, setMessages] = useState<Message[]>([ // Use the Message interface
     { 
       type: 'bot', 
       content: "G'day! I'm your UQU Assistant. I can help you find information about:\n• Support services (SAS, bursaries, welfare)\n• Food outlets and free meals\n• Clubs and societies\n• UQU Collectives\n• Events and activities\n• Mates Rates discounts\n\nWhat would you like to know about?" 
@@ -500,19 +518,19 @@ export default function UQUAssistant() {
   const [inputMessage, setInputMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   
-  const containerRef = useRef(null);
-  const messagesEndRef = useRef(null);
+  const containerRef = useRef<HTMLDivElement>(null); // Type the ref
+  const messagesEndRef = useRef<HTMLDivElement>(null); // Type the ref
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
-  const handleMouseDown = (e) => {
+  const handleMouseDown = (e: React.MouseEvent) => { // Type the event
     setIsDragging(true);
     e.preventDefault();
   };
 
-  const handleMouseMove = (e) => {
+  const handleMouseMove = (e: MouseEvent) => { // Type the event (global MouseEvent)
     if (!isDragging || !containerRef.current) return;
     
     const containerRect = containerRef.current.getBoundingClientRect();
@@ -541,14 +559,14 @@ export default function UQUAssistant() {
         document.body.style.userSelect = 'auto';
       };
     }
-  }, [isDragging]);
+  }, [isDragging, handleMouseMove]); // Added handleMouseMove to dependency array as it's used in effect
 
-  const handleCategoryClick = (category) => {
+  const handleCategoryClick = (category: string) => { // Type category
     setSelectedCategory(category);
     setSelectedItem(null);
   };
 
-  const handleItemClick = (item) => {
+  const handleItemClick = (item: any) => { // Type item appropriately later
     setSelectedItem(item);
   };
 
@@ -560,82 +578,7 @@ export default function UQUAssistant() {
     }
   };
 
-  const processUserMessage = async (message) => {
-    const lowerMessage = message.toLowerCase();
-    let response = "";
-
-    // Check for greetings
-    if (lowerMessage.includes('hello') || lowerMessage.includes('hi') || lowerMessage.includes('hey')) {
-      response = "G'day! How can I help you today? I know all about UQU's services, food outlets, clubs, support services, and more!";
-    }
-    // Check for food/free meals
-    else if (lowerMessage.includes('food') || lowerMessage.includes('eat') || lowerMessage.includes('hungry') || lowerMessage.includes('free')) {
-      response = "🍳 **Free Food Options:**\n• Morning Marmalade: Mon-Fri 8-9:30am (free breakfast)\n• Kampus Kitchen: Mon-Fri 5-6pm (free dinner)\n• Food Co-Op: Mon/Tue/Thu 10am-2pm (low-cost groceries - Mates Rates members only)\n\n";
-      response += "☕ **Food Outlets with Mates Rates (10% off):**\n";
-      const foodOutlets = UQU_DATA.outlets.food_beverage.filter(o => o.mates_rates && o.operating_status !== 'Closed for maintenance');
-      foodOutlets.slice(0, 5).forEach(outlet => {
-        response += `• ${outlet.name}: ${outlet.category}\n`;
-      });
-      response += "\nWould you like to know more about any specific outlet or free meal program?";
-    }
-    // Check for support/help
-    else if (lowerMessage.includes('help') || lowerMessage.includes('support') || lowerMessage.includes('stress') || lowerMessage.includes('struggling')) {
-      response = "UQU Student Advocacy & Support (SAS) offers FREE, confidential help:\n\n";
-      response += "📚 **Academic Support**: Appeals, misconduct allegations, grievances\n";
-      response += "💰 **Welfare & Wellbeing**: Financial assistance, stress management, social connections\n";
-      response += "⚖️ **Legal Support**: Free legal advice with solicitor\n";
-      response += "💼 **Job Preparation**: Resume help, interview practice\n";
-      response += "🌏 **Visa Support**: For international students\n\n";
-      response += "Book online at: supporting-u.uqu.com.au/students/login\n\n";
-      response += "💸 **Emergency Financial Support** available for students in hardship!\n";
-      response += "📞 During exams: SES Freak-Out Phone: 0404 106 173";
-    }
-    // Check for clubs
-    else if (lowerMessage.includes('club') || lowerMessage.includes('society') || lowerMessage.includes('join')) {
-      response = "UQU has 220+ clubs and societies! Here are some examples:\n\n";
-      UQU_DATA.clubs.forEach(club => {
-        response += `• **${club.name}** (${club.category}): ${club.description.substring(0, 60)}...\n`;
-      });
-      response += "\nPlus many more! Visit the clubs section to explore all options.";
-    }
-    // Check for collectives
-    else if (lowerMessage.includes('collective') || lowerMessage.includes('lgbtq') || lowerMessage.includes('queer') || lowerMessage.includes('women') || lowerMessage.includes('disability')) {
-      response = "**UQU Collectives** provide safe spaces and advocacy:\n\n";
-      UQU_DATA.collectives.forEach(collective => {
-        response += `• **${collective.name}**: ${collective.target_group}\n`;
-        if (collective.facilities) {
-          response += `  📍 ${collective.facilities.location}\n`;
-        }
-      });
-      response += "\nAll collectives offer free membership and supportive communities!";
-    }
-    // Check for discount/mates rates
-    else if (lowerMessage.includes('discount') || lowerMessage.includes('mates') || lowerMessage.includes('cheap')) {
-      response = "💳 **Mates Rates - Your FREE Student Discount!**\n\n";
-      response += "✅ FREE membership for all UQ students\n";
-      response += "✅ 10% OFF at most UQU outlets\n";
-      response += "✅ Includes food, drinks, and retail\n";
-      response += "✅ Digital wallet card for easy use\n\n";
-      response += "Sign up at: uqu.com.au/mates-rates\n\n";
-      response += "Plus don't forget:\n";
-      response += "• Free breakfast & dinner daily\n";
-      response += "• Food Co-Op for cheap groceries\n";
-      response += "• Op Shop for budget shopping";
-    }
-    else {
-      response = "I can help you with:\n\n";
-      response += "🛡️ **Support Services**: Academic help, welfare, legal advice, visa support\n";
-      response += "🍔 **Food & Dining**: Free meals, food outlets, Mates Rates discounts\n";
-      response += "👥 **Clubs & Societies**: 220+ options across all interests\n";
-      response += "🏳️‍🌈 **UQU Collectives**: Safe spaces for diverse communities\n";
-      response += "📅 **Events**: Markets, workshops, social activities\n";
-      response += "💰 **Financial Help**: Emergency bursaries, placement support\n\n";
-      response += "What would you like to explore?";
-    }
-
-    return response;
-  };
-
+  // New handleSendMessage function for n8n integration
   const handleSendMessage = async () => {
     if (!inputMessage.trim()) return;
 
@@ -644,46 +587,156 @@ export default function UQUAssistant() {
     setMessages(prev => [...prev, { type: 'user', content: userMessage }]);
     setIsLoading(true);
 
-    // Simulate AI processing
-    setTimeout(async () => {
-      const response = await processUserMessage(userMessage);
-      setMessages(prev => [...prev, { type: 'bot', content: response }]);
+    try {
+      // Use environment variable for the webhook URL
+      // IMPORTANT: Create a .env file in your uqu-assistant project root
+      // and add: REACT_APP_N8N_WEBHOOK=http://localhost:5678/webhook/chat
+      const webhookUrl = process.env.REACT_APP_N8N_WEBHOOK || 'http://localhost:5678/webhook/chat';
+      
+      const response = await fetch(webhookUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          message: userMessage,
+          context: {
+            // Pass relevant context if needed by your n8n workflow
+            selectedArea: selectedCategory, // Using selectedCategory as selectedArea
+            searchQuery: searchQuery
+          }
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error(`Failed to get response from n8n: ${response.status} ${response.statusText}`);
+      }
+
+      const data = await response.json();
+      
+      setMessages(prev => [...prev, { 
+        type: 'bot', 
+        content: data.response || "Sorry, I couldn't process that.", // Fallback for missing response
+        suggestions: data.suggestions || []
+      }]);
+
+      // If the response includes navigation hints, handle them
+      if (data.context_type) {
+        // Map n8n context_type to your existing category names if they differ
+        // For now, assuming they might align or you'll adjust n8n/frontend
+        switch (data.context_type.toLowerCase()) {
+          case 'clubs':
+          case 'clubs & societies':
+            setSelectedCategory('Clubs & Societies');
+            setSelectedItem(null);
+            break;
+          case 'food':
+          case 'food & outlets':
+            setSelectedCategory('Food & Outlets');
+            setSelectedItem(null);
+            break;
+          case 'support':
+          case 'support services':
+            setSelectedCategory('Support Services');
+            setSelectedItem(null);
+            break;
+          case 'collectives':
+          case 'uqu collectives':
+            setSelectedCategory('UQU Collectives');
+            setSelectedItem(null);
+            break;
+          case 'programs':
+            setSelectedCategory('Programs');
+            setSelectedItem(null);
+            break;
+          case 'events':
+            setSelectedCategory('Events');
+            setSelectedItem(null);
+            break;
+          // Add more cases as needed
+          default:
+            // Optionally clear selection or navigate to a default view
+            // setSelectedCategory(null); 
+            // setSelectedItem(null);
+            break;
+        }
+      }
+
+    } catch (error) {
+      console.error('Error sending message to n8n:', error);
+      setMessages(prev => [...prev, { 
+        type: 'bot', 
+        content: "Sorry, I'm having trouble connecting. Please try again later." 
+      }]);
+    } finally {
       setIsLoading(false);
-    }, 1000);
+    }
   };
+  
+  // Optional: Function to test n8n connection on component mount (for development)
+  const testN8nConnection = async () => {
+    try {
+      const webhookUrl = process.env.REACT_APP_N8N_WEBHOOK || 'http://localhost:5678/webhook/chat';
+      const response = await fetch(webhookUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ 
+          message: 'test connection', 
+          context: {} 
+        })
+      });
+      
+      if (response.ok) {
+        console.log('✅ n8n connection test successful (check n8n execution logs)');
+      } else {
+        console.log('❌ n8n connection test failed:', response.status, response.statusText);
+      }
+    } catch (error: any) { // Type error
+      console.log('❌ n8n not reachable for test:', error.message);
+    }
+  };
+
+  useEffect(() => {
+    if (process.env.NODE_ENV === 'development') {
+      // testN8nConnection(); // You can uncomment this to test on load
+    }
+  }, []);
+
 
   const renderUpperPanel = () => {
     // Detail view for specific item
     if (selectedItem) {
+      // Ensure selectedItem is not null and has a name property before rendering
+      const itemName = selectedItem.name || "Details"; 
       return (
-        <div className="p-6">
+        <div className="p-6 bg-gray-50 h-full overflow-y-auto">
           <button 
             onClick={handleBackClick}
-            className="flex items-center text-purple-600 hover:text-purple-700 mb-4"
+            className="flex items-center text-purple-600 hover:text-purple-700 mb-4 font-medium"
           >
-            <ChevronLeft className="w-4 h-4 mr-1" />
-            Back to {selectedCategory}
+            <ChevronLeft className="w-5 h-5 mr-1" />
+            Back to {selectedCategory || "Categories"}
           </button>
           
-          <h2 className="text-2xl font-bold mb-4">{selectedItem.name}</h2>
+          <h2 className="text-3xl font-bold mb-6 text-purple-700">{itemName}</h2>
           
           {/* Render details based on category */}
-          {selectedCategory === 'Support Services' && (
-            <div className="space-y-4">
-              <p className="text-gray-600">{selectedItem.description}</p>
+          {selectedCategory === 'Support Services' && selectedItem.description && (
+            <div className="space-y-6">
+              <p className="text-gray-700 text-lg leading-relaxed">{selectedItem.description}</p>
               
               {selectedItem.appointment_types && (
-                <div className="space-y-3">
-                  <h3 className="font-semibold text-lg">Services Available:</h3>
-                  {Object.entries(selectedItem.appointment_types).map(([key, type]) => (
-                    <div key={key} className="bg-gray-50 rounded-lg p-4">
-                      <h4 className="font-semibold capitalize">{key.replace('_', ' ')}</h4>
-                      <p className="text-sm text-gray-600 mb-2">{type.description}</p>
-                      <ul className="text-sm space-y-1">
-                        {type.services.map((service, idx) => (
+                <div className="space-y-4">
+                  <h3 className="font-semibold text-xl text-purple-600 mb-3">Services Available:</h3>
+                  {Object.entries(selectedItem.appointment_types).map(([key, type]: [string, any]) => (
+                    <div key={key} className="bg-white rounded-xl p-6 shadow-lg border border-purple-100">
+                      <h4 className="font-semibold capitalize text-lg text-purple-700 mb-2">{key.replace(/_/g, ' ')}</h4>
+                      <p className="text-sm text-gray-600 mb-3">{type.description}</p>
+                      <ul className="text-sm space-y-2">
+                        {type.services.map((service: string, idx: number) => (
                           <li key={idx} className="flex items-start">
-                            <span className="text-purple-600 mr-2">•</span>
-                            {service}
+                            <ChevronRight className="w-4 h-4 text-purple-500 mr-2 mt-0.5 flex-shrink-0" />
+                            <span className="text-gray-700">{service}</span>
                           </li>
                         ))}
                       </ul>
@@ -693,9 +746,14 @@ export default function UQUAssistant() {
               )}
               
               {selectedItem.booking_system && (
-                <div className="bg-purple-50 rounded-lg p-4">
-                  <p className="font-semibold">Book an appointment:</p>
-                  <a href={selectedItem.booking_system} className="text-purple-600 hover:underline">
+                <div className="bg-purple-50 rounded-xl p-6 mt-6 border border-purple-200">
+                  <p className="font-semibold text-purple-700 mb-2">Book an appointment:</p>
+                  <a 
+                    href={selectedItem.booking_system} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-purple-600 hover:underline hover:text-purple-800 break-all"
+                  >
                     {selectedItem.booking_system}
                   </a>
                 </div>
@@ -703,111 +761,131 @@ export default function UQUAssistant() {
             </div>
           )}
           
-          {selectedCategory === 'Food & Outlets' && (
+          {selectedCategory === 'Food & Outlets' && selectedItem.description && (
             <div className="space-y-4">
-              <div className="bg-white rounded-lg p-4 shadow">
-                <p className="text-gray-600 mb-3">{selectedItem.description}</p>
-                <div className="space-y-2 text-sm">
-                  <p><strong>Location:</strong> {selectedItem.location}</p>
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200">
+                {selectedItem.logo && <img src={selectedItem.logo} alt={selectedItem.name} className="w-20 h-20 rounded-md mb-4 object-contain mx-auto"/>}
+                <p className="text-gray-700 mb-4 text-center">{selectedItem.description}</p>
+                <div className="space-y-2 text-sm text-gray-600 border-t pt-4">
+                  <p><strong>Location:</strong> {selectedItem.location || 'N/A'}</p>
                   {selectedItem.established && <p><strong>Established:</strong> {selectedItem.established}</p>}
                   {selectedItem.mates_rates && (
                     <p className="text-purple-600 font-semibold">✅ Mates Rates discount available (10% off)</p>
                   )}
                   {selectedItem.operating_status === 'Closed for maintenance' && (
-                    <p className="text-red-600 font-semibold">⚠️ Currently closed - reopening {selectedItem.reopening}</p>
+                    <p className="text-red-600 font-semibold">⚠️ Currently closed - reopening {selectedItem.reopening || 'soon'}</p>
+                  )}
+                   {selectedItem.operating_schedule && (
+                    <p><strong>Hours:</strong> {selectedItem.operating_schedule.day} {selectedItem.operating_schedule.hours}</p>
                   )}
                 </div>
               </div>
             </div>
           )}
           
-          {selectedCategory === 'UQU Collectives' && (
-            <div className="space-y-4">
-              <p className="text-gray-600">{selectedItem.description}</p>
-              <div className="bg-gray-50 rounded-lg p-4">
-                <h3 className="font-semibold mb-2">Target Group:</h3>
-                <p>{selectedItem.target_group}</p>
+          {selectedCategory === 'UQU Collectives' && selectedItem.description && (
+            <div className="space-y-6">
+              <p className="text-gray-700 text-lg leading-relaxed">{selectedItem.description}</p>
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200">
+                <h3 className="font-semibold mb-2 text-purple-700">Target Group:</h3>
+                <p className="text-gray-600">{selectedItem.target_group}</p>
               </div>
               {selectedItem.facilities && (
-                <div className="bg-blue-50 rounded-lg p-4">
-                  <h3 className="font-semibold mb-2">Location & Hours:</h3>
-                  <p><strong>Location:</strong> {selectedItem.facilities.location}</p>
-                  <p><strong>Hours:</strong> {selectedItem.facilities.hours}</p>
+                <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
+                  <h3 className="font-semibold mb-2 text-blue-700">Location & Hours:</h3>
+                  <p className="text-gray-600"><strong>Location:</strong> {selectedItem.facilities.location}</p>
+                  {selectedItem.facilities.hours && <p className="text-gray-600"><strong>Hours:</strong> {selectedItem.facilities.hours}</p>}
                 </div>
               )}
-              {selectedItem.contact && (
-                <div className="bg-purple-50 rounded-lg p-4">
-                  <h3 className="font-semibold mb-2">Contact:</h3>
-                  {selectedItem.contact.email && <p>Email: {selectedItem.contact.email}</p>}
+              {selectedItem.contact && selectedItem.contact.email && (
+                <div className="bg-green-50 rounded-xl p-6 border border-green-200">
+                  <h3 className="font-semibold mb-2 text-green-700">Contact:</h3>
+                  <p className="text-gray-600">Email: <a href={`mailto:${selectedItem.contact.email}`} className="text-green-600 hover:underline">{selectedItem.contact.email}</a></p>
                 </div>
               )}
             </div>
           )}
+           {/* Add similar detailed views for Clubs, Programs, Events if needed */}
         </div>
       );
     }
 
     // Category listing view
     if (selectedCategory) {
-      let items = [];
-      let categoryIcon = HelpCircle;
+      let itemsToDisplay: any[] = []; // Type appropriately later
+      let CategoryIconComponent = HelpCircle; // Default icon
       
       switch (selectedCategory) {
         case 'Support Services':
-          items = Object.values(UQU_DATA.support_services);
-          categoryIcon = Heart;
+          itemsToDisplay = Object.values(UQU_DATA.support_services);
+          CategoryIconComponent = categoryIcons.support || HelpCircle;
           break;
         case 'Food & Outlets':
-          items = [...UQU_DATA.outlets.food_beverage, ...UQU_DATA.outlets.retail_markets];
-          categoryIcon = Coffee;
+          itemsToDisplay = [...UQU_DATA.outlets.food_beverage, ...UQU_DATA.outlets.retail_markets];
+          CategoryIconComponent = categoryIcons.outlets || HelpCircle;
           break;
         case 'UQU Collectives':
-          items = UQU_DATA.collectives;
-          categoryIcon = Users;
+          itemsToDisplay = UQU_DATA.collectives;
+          CategoryIconComponent = categoryIcons.collectives || HelpCircle;
           break;
         case 'Clubs & Societies':
-          items = UQU_DATA.clubs;
-          categoryIcon = MessageCircle;
+          itemsToDisplay = UQU_DATA.clubs;
+          CategoryIconComponent = categoryIcons.clubs || HelpCircle;
           break;
         case 'Programs':
-          items = Object.values(UQU_DATA.programs);
-          categoryIcon = Shield;
+          itemsToDisplay = Object.values(UQU_DATA.programs);
+          CategoryIconComponent = categoryIcons.programs || HelpCircle;
           break;
+        case 'Events':
+            itemsToDisplay = UQU_DATA.events.recurring_events; // Assuming we show recurring for now
+            CategoryIconComponent = categoryIcons.events || HelpCircle;
+            break;
+        default:
+            itemsToDisplay = []; // Handle unknown category
       }
 
-      const Icon = categoryIcon;
-
       return (
-        <div className="p-6">
+        <div className="p-6 bg-gray-50 h-full overflow-y-auto">
           <button 
             onClick={handleBackClick}
-            className="flex items-center text-purple-600 hover:text-purple-700 mb-4"
+            className="flex items-center text-purple-600 hover:text-purple-700 mb-6 font-medium"
           >
-            <ChevronLeft className="w-4 h-4 mr-1" />
+            <ChevronLeft className="w-5 h-5 mr-1" />
             Back to Home
           </button>
           
-          <div className="flex items-center mb-6">
-            <Icon className="w-8 h-8 text-purple-600 mr-3" />
-            <h2 className="text-2xl font-bold">{selectedCategory}</h2>
+          <div className="flex items-center mb-8">
+            <CategoryIconComponent className="w-10 h-10 text-purple-600 mr-4 flex-shrink-0" />
+            <h2 className="text-3xl font-bold text-purple-700">{selectedCategory}</h2>
           </div>
 
-          <div className="grid gap-4">
-            {items.map((item, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {itemsToDisplay.map((item, index) => (
               <button
                 key={item.id || index}
                 onClick={() => handleItemClick(item)}
-                className="bg-white rounded-lg p-4 shadow hover:shadow-md transition-shadow text-left"
+                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out text-left border border-gray-200 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50"
               >
-                <h3 className="font-semibold text-lg">{item.name}</h3>
-                <p className="text-sm text-gray-600 mt-1">
-                  {item.description && item.description.substring(0, 100)}...
-                </p>
-                {item.mates_rates && (
-                  <span className="inline-block mt-2 px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded">
-                    Mates Rates
-                  </span>
-                )}
+                <div className="flex items-start space-x-4">
+                  {item.logo ? (
+                     <img src={item.logo} alt={item.name} className="w-12 h-12 rounded-md object-contain flex-shrink-0 mt-1"/>
+                  ) : (
+                    <div className="w-12 h-12 bg-purple-100 rounded-md flex items-center justify-center flex-shrink-0 mt-1">
+                      <CategoryIconComponent className="w-6 h-6 text-purple-500" />
+                    </div>
+                  )}
+                  <div>
+                    <h3 className="font-semibold text-lg text-purple-800 mb-1">{item.name}</h3>
+                    <p className="text-sm text-gray-600 line-clamp-2">
+                      {item.description && item.description}
+                    </p>
+                    {item.mates_rates && (
+                      <span className="inline-block mt-2 px-3 py-1 bg-purple-100 text-purple-700 text-xs font-semibold rounded-full">
+                        Mates Rates
+                      </span>
+                    )}
+                  </div>
+                </div>
               </button>
             ))}
           </div>
@@ -815,115 +893,87 @@ export default function UQUAssistant() {
       );
     }
 
-    // Home view
+    // Home view (upper panel)
     return (
-      <div className="p-6">
-        <div className="mb-6 text-center">
-          <h1 className="text-3xl font-bold text-purple-800 mb-2">{UQU_DATA.organization.name}</h1>
-          <p className="text-gray-600">{UQU_DATA.organization.tagline}</p>
+      <div className="p-6 bg-gray-50 h-full overflow-y-auto">
+        <div className="mb-8 text-center">
+          <img src="https://uqu.com.au/wp-content/uploads/UQUnion_Primary_LogoLockUp_RGB-01.png" alt="UQU Logo" className="w-48 mx-auto mb-4"/>
+          <h1 className="text-4xl font-extrabold text-purple-800 mb-2">{UQU_DATA.organization.name}</h1>
+          <p className="text-lg text-gray-600">{UQU_DATA.organization.tagline}</p>
         </div>
 
-        <div className="relative mb-6">
-          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+        <div className="relative mb-8">
+          <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5 pointer-events-none" />
           <input
             type="text"
-            placeholder="Search services, clubs, outlets..."
+            placeholder="Search services, clubs, food, events..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+            className="w-full pl-12 pr-4 py-3 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 text-lg"
           />
         </div>
 
         {/* Main Categories */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-          <button
-            onClick={() => handleCategoryClick('Support Services')}
-            className="bg-white rounded-lg p-4 shadow hover:shadow-md transition-shadow text-left"
-          >
-            <Heart className="w-8 h-8 text-purple-600 mb-2" />
-            <h3 className="font-semibold">Support Services</h3>
-            <p className="text-sm text-gray-600">SAS, welfare, exams</p>
-          </button>
-
-          <button
-            onClick={() => handleCategoryClick('Food & Outlets')}
-            className="bg-white rounded-lg p-4 shadow hover:shadow-md transition-shadow text-left"
-          >
-            <Coffee className="w-8 h-8 text-purple-600 mb-2" />
-            <h3 className="font-semibold">Food & Outlets</h3>
-            <p className="text-sm text-gray-600">13 outlets + free meals</p>
-          </button>
-
-          <button
-            onClick={() => handleCategoryClick('UQU Collectives')}
-            className="bg-white rounded-lg p-4 shadow hover:shadow-md transition-shadow text-left"
-          >
-            <Users className="w-8 h-8 text-purple-600 mb-2" />
-            <h3 className="font-semibold">UQU Collectives</h3>
-            <p className="text-sm text-gray-600">7 support groups</p>
-          </button>
-
-          <button
-            onClick={() => handleCategoryClick('Clubs & Societies')}
-            className="bg-white rounded-lg p-4 shadow hover:shadow-md transition-shadow text-left"
-          >
-            <MessageCircle className="w-8 h-8 text-purple-600 mb-2" />
-            <h3 className="font-semibold">Clubs & Societies</h3>
-            <p className="text-sm text-gray-600">220+ clubs</p>
-          </button>
-
-          <button
-            onClick={() => handleCategoryClick('Events')}
-            className="bg-white rounded-lg p-4 shadow hover:shadow-md transition-shadow text-left"
-          >
-            <Calendar className="w-8 h-8 text-purple-600 mb-2" />
-            <h3 className="font-semibold">Events</h3>
-            <p className="text-sm text-gray-600">Weekly markets & more</p>
-          </button>
-
-          <button
-            onClick={() => handleCategoryClick('Programs')}
-            className="bg-white rounded-lg p-4 shadow hover:shadow-md transition-shadow text-left"
-          >
-            <Shield className="w-8 h-8 text-purple-600 mb-2" />
-            <h3 className="font-semibold">Programs</h3>
-            <p className="text-sm text-gray-600">Mates Rates & more</p>
-          </button>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-8">
+          {[
+            { name: 'Support Services', icon: Heart, desc: "SAS, welfare, exams" },
+            { name: 'Food & Outlets', icon: Coffee, desc: "13 outlets + free meals" },
+            { name: 'UQU Collectives', icon: Users, desc: "7 support groups" },
+            { name: 'Clubs & Societies', icon: MessageCircle, desc: "220+ clubs" },
+            { name: 'Events', icon: Calendar, desc: "Weekly markets & more" },
+            { name: 'Programs', icon: Shield, desc: "Mates Rates & more" },
+          ].map(cat => {
+            const IconComponent = cat.icon;
+            return (
+              <button
+                key={cat.name}
+                onClick={() => handleCategoryClick(cat.name)}
+                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out text-left border border-gray-200 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50"
+              >
+                <IconComponent className="w-10 h-10 text-purple-600 mb-3" />
+                <h3 className="font-semibold text-xl text-purple-800 mb-1">{cat.name}</h3>
+                <p className="text-sm text-gray-600">{cat.desc}</p>
+              </button>
+            );
+          })}
         </div>
 
         {/* Quick Info Cards */}
-        <div className="space-y-3">
-          <div className="bg-pink-50 rounded-lg p-4">
-            <h3 className="font-semibold mb-2">🍳 Daily Free Meals</h3>
-            <p className="text-sm">Breakfast: Mon-Fri 8-9:30am | Dinner: Mon-Fri 5-6pm</p>
+        <div className="space-y-4">
+          <div className="bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-xl p-6 shadow-lg">
+            <h3 className="font-bold text-lg mb-2 flex items-center"><Utensils className="w-6 h-6 mr-2"/>Daily Free Meals</h3>
+            <p className="text-sm">Breakfast: Mon-Fri 8-9:30am | Dinner: Mon-Fri 5-6pm. Find them at the Union Complex!</p>
           </div>
 
-          <div className="bg-purple-50 rounded-lg p-4">
-            <h3 className="font-semibold mb-2">💳 Mates Rates</h3>
-            <p className="text-sm">FREE membership = 10% off at UQU outlets!</p>
+          <div className="bg-gradient-to-r from-purple-500 to-indigo-500 text-white rounded-xl p-6 shadow-lg">
+            <h3 className="font-bold text-lg mb-2 flex items-center"><DollarSign className="w-6 h-6 mr-2"/>Mates Rates</h3>
+            <p className="text-sm">FREE membership = 10% off at UQU outlets! Sign up online.</p>
           </div>
 
-          <div className="bg-blue-50 rounded-lg p-4">
-            <h3 className="font-semibold mb-2">📞 Need Help?</h3>
-            <p className="text-sm">Book SAS appointment online or call during exam week: 0404 106 173</p>
+          <div className="bg-gradient-to-r from-sky-400 to-cyan-400 text-white rounded-xl p-6 shadow-lg">
+            <h3 className="font-bold text-lg mb-2 flex items-center"><HelpCircle className="w-6 h-6 mr-2"/>Need Help?</h3>
+            <p className="text-sm">Book a FREE SAS appointment online. For exam stress, call the SES Freak-Out Phone: 0404 106 173.</p>
           </div>
         </div>
 
         {/* Contact Info */}
-        <div className="mt-6 pt-6 border-t border-gray-200">
-          <div className="flex justify-center space-x-6">
-            <a href={UQU_DATA.organization.contact.social_media.facebook} className="text-gray-400 hover:text-purple-600">
-              <Facebook className="w-5 h-5" />
+        <div className="mt-10 pt-8 border-t border-gray-300">
+          <div className="flex justify-center space-x-8 mb-3">
+            <a href={UQU_DATA.organization.contact.social_media.facebook} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-purple-600 transition-colors">
+              <Facebook className="w-7 h-7" />
             </a>
-            <a href={UQU_DATA.organization.contact.social_media.instagram} className="text-gray-400 hover:text-purple-600">
-              <Instagram className="w-5 h-5" />
+            <a href={UQU_DATA.organization.contact.social_media.instagram} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-purple-600 transition-colors">
+              <Instagram className="w-7 h-7" />
             </a>
-            <a href={UQU_DATA.organization.contact.website} className="text-gray-400 hover:text-purple-600">
-              <Globe className="w-5 h-5" />
+            <a href={UQU_DATA.organization.contact.website} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-purple-600 transition-colors">
+              <Globe className="w-7 h-7" />
             </a>
           </div>
-          <p className="text-center text-xs text-gray-500 mt-2">
+          <p className="text-center text-xs text-gray-500">
             {UQU_DATA.organization.contact.location} | {UQU_DATA.organization.contact.hours}
+          </p>
+          <p className="text-center text-xs text-gray-400 mt-1">
+            © {new Date().getFullYear()} University of Queensland Union
           </p>
         </div>
       </div>
@@ -931,57 +981,79 @@ export default function UQUAssistant() {
   };
 
   return (
-    <div ref={containerRef} className="h-screen flex flex-col bg-gray-50 relative overflow-hidden">
+    <div ref={containerRef} className="h-screen flex flex-col bg-gray-100 relative overflow-hidden font-sans">
       {/* Upper Panel */}
       <div 
         style={{ height: `${dividerPosition}%` }} 
-        className="bg-gray-50 overflow-y-auto"
+        className="bg-gray-50 overflow-y-auto shadow-inner" // Added shadow-inner for depth
       >
         {renderUpperPanel()}
       </div>
 
       {/* Draggable Divider */}
       <div 
-        className="h-3 bg-gray-300 cursor-ns-resize hover:bg-gray-400 transition-colors relative flex items-center justify-center"
+        className="h-3 bg-gray-300 hover:bg-purple-400 transition-colors duration-200 ease-in-out cursor-ns-resize relative flex items-center justify-center group"
         onMouseDown={handleMouseDown}
       >
-        <div className="w-12 h-1 bg-gray-500 rounded-full" />
+        <div className="w-10 h-1 bg-gray-500 rounded-full group-hover:bg-white transition-colors" />
       </div>
 
       {/* Lower Panel - Chat Interface */}
       <div 
-        style={{ height: `${100 - dividerPosition}%` }} 
-        className="bg-white flex flex-col"
+        style={{ height: `calc(${100 - dividerPosition}% - 0.75rem)` }} // Account for divider height
+        className="bg-white flex flex-col border-t border-gray-300"
       >
-        <div className="bg-purple-600 text-white p-4">
-          <h2 className="text-lg font-semibold">UQU AI Assistant</h2>
+        <div className="bg-purple-700 text-white p-4 shadow-md">
+          <h2 className="text-xl font-semibold">UQU AI Assistant</h2>
           <p className="text-sm opacity-90">Ask me anything about UQU services!</p>
         </div>
 
-        <div className="flex-1 overflow-y-auto p-4 space-y-4">
+        <div className="flex-1 overflow-y-auto p-6 space-y-4 bg-gray-50">
           {messages.map((message, index) => (
             <div
               key={index}
               className={`flex ${message.type === 'user' ? 'justify-end' : 'justify-start'}`}
             >
-              <div
-                className={`max-w-[80%] rounded-lg p-3 ${
-                  message.type === 'user'
-                    ? 'bg-purple-600 text-white'
-                    : 'bg-gray-100 text-gray-800'
-                }`}
-              >
-                <p className="whitespace-pre-line">{message.content}</p>
+              <div className={`max-w-[85%] ${message.type === 'user' ? '' : 'space-y-2'}`}>
+                <div
+                  className={`rounded-xl py-3 px-4 shadow-md ${ // Changed to rounded-xl and added shadow
+                    message.type === 'user'
+                      ? 'bg-purple-600 text-white'
+                      : 'bg-white text-gray-800 border border-gray-200' // Bot messages with border
+                  }`}
+                >
+                  <p className="whitespace-pre-line text-sm leading-relaxed">{message.content}</p>
+                </div>
+                
+                {/* Render suggestions if they exist */}
+                {message.type === 'bot' && message.suggestions && message.suggestions.length > 0 && (
+                  <div className="flex flex-wrap gap-2 mt-2 pl-2">
+                    {message.suggestions.map((suggestion, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => {
+                          setInputMessage(suggestion); 
+                          // Optionally, auto-send the suggestion when clicked
+                          // handleSendMessage(); // Or let user press send
+                        }}
+                        className="text-xs px-3 py-1.5 bg-purple-100 text-purple-700 rounded-full hover:bg-purple-200 transition-colors focus:outline-none focus:ring-2 focus:ring-purple-400"
+                      >
+                        {suggestion}
+                      </button>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           ))}
           {isLoading && (
             <div className="flex justify-start">
-              <div className="bg-gray-100 rounded-lg p-3">
-                <div className="flex space-x-2">
-                  <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" />
-                  <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }} />
-                  <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }} />
+              <div className="bg-white rounded-xl p-3 shadow-md border border-gray-200">
+                <div className="flex space-x-1.5 items-center">
+                  <div className="w-2 h-2 bg-purple-400 rounded-full animate-bounce" />
+                  <div className="w-2 h-2 bg-purple-400 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }} />
+                  <div className="w-2 h-2 bg-purple-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }} />
+                  <span className="text-xs text-gray-500 ml-1">Typing...</span>
                 </div>
               </div>
             </div>
@@ -989,22 +1061,22 @@ export default function UQUAssistant() {
           <div ref={messagesEndRef} />
         </div>
 
-        <div className="p-4 border-t">
-          <div className="flex gap-2">
+        <div className="p-4 border-t bg-gray-100">
+          <div className="flex items-center gap-3">
             <input
               type="text"
               value={inputMessage}
               onChange={(e) => setInputMessage(e.target.value)}
-              onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
-              placeholder="Ask about support, food, clubs, events..."
-              className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+              onKeyPress={(e) => e.key === 'Enter' && !isLoading && handleSendMessage()}
+              placeholder="Ask about support, food, clubs..."
+              className="flex-1 px-4 py-3 border-2 border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 text-base"
             />
             <button
               onClick={handleSendMessage}
               disabled={!inputMessage.trim() || isLoading}
-              className="bg-purple-600 text-white p-2 rounded-lg hover:bg-purple-700 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="bg-purple-600 text-white p-3 rounded-xl hover:bg-purple-700 disabled:opacity-60 disabled:cursor-not-allowed transition-colors focus:outline-none focus:ring-2 focus:ring-purple-400"
             >
-              <Send className="w-5 h-5" />
+              <Send className="w-6 h-6" />
             </button>
           </div>
         </div>
