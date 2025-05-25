@@ -1,0 +1,1767 @@
+{
+  "organization": {
+    "name": "University of Queensland Union",
+    "abbreviation": "UQU",
+    "tagline": "Your student union representing you at UQ",
+    "mission": "Representing the diverse interests of students and running services to enhance daily experience",
+    "philosophy": "Every university student deserves access to support they need to thrive - academically, socially, and mentally",
+    "organizational_structure": {
+      "type": "Independent organisation",
+      "governance": "Student executive elected by students",
+      "decision_making": "Student feedback and new ideas drive priorities",
+      "independence": "Independent of the University"
+    },
+    "core_values": [
+      "Student representation and advocacy",
+      "Comprehensive support services",
+      "Vibrant campus culture",
+      "Student voice in university matters",
+      "Academic, social, and mental wellbeing"
+    ],
+    "contact": {
+      "location": "Level 4, Building 21A, University of Queensland, St Lucia",
+      "hours": "8am-4pm",
+      "website": "https://uqu.com.au/",
+      "social_media": {
+        "instagram": "https://www.instagram.com/UQUnion/",
+        "tiktok": "https://www.tiktok.com/@uqunion",
+        "facebook": "https://www.facebook.com/UQUnion/"
+      }
+    },
+    "funding": {
+      "ssaf": {
+        "name": "Student Services and Amenities Fee (SSAF)",
+        "legislation_date": "11 October 2011",
+        "purpose": "Provide and enhance non-academic services on campus for student experience benefit",
+        "more_info": "https://uqu.com.au/ssaf"
+      }
+    }
+  },
+  "collectives": [
+    {
+      "id": "disability_collective",
+      "name": "UQU Disability Collective",
+      "category": "Identity & Support",
+      "logo": "https://uqu.com.au/wp-content/uploads/Disco-Logo.png",
+      "target_group": "Students who experience disability, chronic illness, mental illness, neurodiversity and/or are Deaf",
+      "description": "Branch of UQU focused on advocacy, support and social connectedness for students with disabilities. Provides safe spaces, peer support, and works with university administration to advocate for student rights.",
+      "mission": "Advocacy, support and social connectedness of students at UQ who experience disability, chronic illness, mental illness, neurodiversity and/or are Deaf",
+      "membership": {
+        "type": "automatic",
+        "eligibility": "All students who identify as experiencing disability, chronic illness, mental illness, neurodiversity and/or are Deaf",
+        "fees": "None",
+        "voting_rights": "Equal voting rights for all members"
+      },
+      "services": [
+        "Student Access Plan (SAP) guidance and examples",
+        "Course coordinator communication support",
+        "Discrimination assistance and legal referrals",
+        "Mental health navigation support",
+        "Study skills improvement and barrier alternatives",
+        "Advocacy for equitable access to education",
+        "Safe social environment for engagement"
+      ],
+      "facilities": {
+        "location": "Room 21A (opposite Main Course), Student Union Building Level 1",
+        "hours": "Monday-Friday, 6am-9pm",
+        "features": ["Safe environment", "Relaxation space", "Medication administration", "Literature and resources", "Social area"]
+      },
+      "activities": [
+        "Informal networking events",
+        "Workshops",
+        "Organised events and meetings",
+        "Online community engagement"
+      ],
+      "partnerships": [
+        "University administration and teaching staff",
+        "UQ Disability, Diversity and Inclusion Advisors (DDIA)"
+      ],
+      "resources": {
+        "reports": "Student disability experiences survey (April-July 2022)",
+        "external_contacts": [
+          "Australian Network on Disability",
+          "1800RESPECT",
+          "Headspace",
+          "SANE Australia",
+          "Lifeline",
+          "Legal Aid Queensland",
+          "Aged and Disability Advocacy Australia"
+        ]
+      },
+      "interests": ["disability advocacy", "peer support", "accessibility", "mental health", "social connection", "student rights"],
+      "url": "https://uqu.com.au/uqu-collectives/disability-collective/"
+    },
+    {
+      "id": "environment_collective",
+      "name": "UQU Environment Collective",
+      "category": "Issue-Based Advocacy",
+      "logo": "https://uqu.com.au/wp-content/uploads/UQUnion_EvironmentCollective_Logo_2020-01-1536x1086.png",
+      "target_group": "Students, staff and general public interested in environmental issues",
+      "description": "Inclusive platform for encouraging sustainable practices on campus, environmental advocacy, and promoting awareness of Queensland's native flora and fauna.",
+      "mission": "Encouraging sustainable practices on campus, promoting greater awareness of Queensland's native flora and fauna, and promoting a clean and green St. Lucia",
+      "membership": {
+        "type": "open",
+        "eligibility": "All UQ students, staff, and general public",
+        "fees": "None specified"
+      },
+      "services": [
+        "Sustainable practice promotion",
+        "Environmental advocacy",
+        "Reef conservation campaigns",
+        "Native flora and fauna education"
+      ],
+      "facilities": {
+        "location": "Room 21D",
+        "hours": "Monday-Friday, 6am-8pm"
+      },
+      "activities": [
+        "Waterfall Crawl (start of semester)",
+        "Earth Day Breakfast",
+        "No Meat Mondays",
+        "Range of environmental events throughout the year"
+      ],
+      "focus_areas": [
+        "Campus sustainability",
+        "Great Barrier Reef advocacy",
+        "Queensland biodiversity",
+        "Clean and green campus initiatives"
+      ],
+      "interests": ["sustainability", "environmental advocacy", "networking", "conservation", "native wildlife"],
+      "url": "https://uqu.com.au/uqu-collectives/environment-collective/"
+    },
+    {
+      "id": "goorie_berrimpa",
+      "name": "UQU Goorie Berrimpa",
+      "category": "Cultural & Identity",
+      "logo": "https://uqu.com.au/wp-content/uploads/Goorie-logo-1.png",
+      "target_group": "Aboriginal and Torres Strait Islander students",
+      "description": "Aboriginal and Torres Strait Islander student collective serving as a 'second home for UQ's deadliest students.' Student-led organization fostering belonging, cultural pride, and connection for First Nations students.",
+      "mission": "Fostering a strong sense of belonging, cultural pride, and connection for all First Nations students at UQ, regardless of their background or field of study",
+      "name_meaning": "Meeting Place in the language of the Turrbal people",
+      "membership": {
+        "type": "automatic",
+        "eligibility": "All UQ students who identify as Aboriginal and/or Torres Strait Islander",
+        "fees": "None"
+      },
+      "services": [
+        "Cultural connection and pride building",
+        "Academic and social support",
+        "Advocacy on UQ committees",
+        "Community building and networking"
+      ],
+      "facilities": {
+        "location": "Aboriginal and Torres Strait Islander Studies Unit (ATSISU), Level 2, Bookshop Building (Building 4)",
+        "features": ["Study space", "Cooking facilities", "Social area", "Cultural gathering space"]
+      },
+      "activities": [
+        "Social sport events",
+        "Movie and games nights",
+        "NRL Indigenous Round celebrations",
+        "Goorie Ball (showpiece event)",
+        "Indigenous University Nationals participation"
+      ],
+      "special_features": {
+        "sports_team": "Goorie Goannas - premier sporting team representing Goorie and UQ",
+        "governance": "Strong voice on key UQ committees",
+        "partnerships": ["UQ Union (UQU)", "University of Queensland", "Aboriginal and Torres Strait Islander Studies Unit (ATSISU)"]
+      },
+      "interests": ["socialising", "networking", "sharing culture", "community building", "Indigenous sports", "cultural pride"],
+      "contact": {
+        "email": "goorie@uqu.com.au"
+      },
+      "url": "https://uqu.com.au/uqu-collectives/goorie-berrimpa/"
+    },
+    {
+      "id": "international_collective",
+      "name": "UQU International Collective",
+      "category": "Support & Advocacy",
+      "logo": "https://uqu.com.au/wp-content/uploads/IntCo-Design-01.jpg",
+      "target_group": "International students and those interested in cultural diversity",
+      "description": "Student collective providing guidance and support for international students throughout their university experience, understanding the challenges of leaving home country behind.",
+      "mission": "Guide and support international students throughout their university journey and advocate on behalf of international students to the University of Queensland",
+      "membership": {
+        "type": "open",
+        "eligibility": "All international students and any UQ students interested in cultural diversity",
+        "fees": "None specified"
+      },
+      "services": [
+        "Guidance and support for international students",
+        "Advocacy to University of Queensland",
+        "Cultural diversity promotion",
+        "University experience improvement initiatives"
+      ],
+      "facilities": {
+        "location": "Room 21D",
+        "hours": "Monday-Friday, 6am-8pm"
+      },
+      "focus_areas": [
+        "International student challenges",
+        "Cultural integration support",
+        "University service improvements",
+        "Cross-cultural understanding"
+      ],
+      "interests": ["advocacy", "networking", "support", "cultural diversity", "international student rights"],
+      "url": "https://uqu.com.au/uqu-collectives/international-collective/"
+    },
+    {
+      "id": "queer_collective",
+      "name": "UQU Queer Collective",
+      "category": "Identity & Community",
+      "logo": "https://uqu.com.au/wp-content/uploads/UQUQueer_Collective_logo_LandingPage_Large.png",
+      "target_group": "LGBTQIA+ and queer students",
+      "description": "Community group for UQ LGBTQIA+ community facilitating social, charitable, educational, and political events. Proud inheritor of decades of LGBTQIA+ advocacy achievements at UQ.",
+      "mission": "Offer regular events, advocacy campaigns, mutual aid, community, friendship, and support for LGBTQIA+ students",
+      "membership": {
+        "type": "automatic",
+        "eligibility": "All UQ community members who identify as queer and/or LGBTQIA+",
+        "fees": "None",
+        "allies": "Welcome at public events as guests"
+      },
+      "services": [
+        "Regular events and activities",
+        "Advocacy campaigns",
+        "Mutual aid programs",
+        "Community building and friendship",
+        "Support services"
+      ],
+      "facilities": {
+        "name": "Carden Queer Room",
+        "location": "Room 21A",
+        "hours": "Monday-Friday, 6am-9pm",
+        "access": "LGBTQIA+ students only (allies welcome as guests)",
+        "features": ["Study space", "Social space", "Gender affirming wear space", "Hiding away space", "Kitchenette", "Extensive tea collection"]
+      },
+      "activities": [
+        "Social events",
+        "Charitable events", 
+        "Educational events",
+        "Political events",
+        "Social media community groups"
+      ],
+      "historical_achievements": [
+        "Decriminalisation of homosexuality",
+        "Introduction of Anti-Discrimination Act",
+        "Marriage Equality acts",
+        "Hosting numerous national conferences",
+        "Hundreds of community events"
+      ],
+      "interests": ["advocacy", "community", "sexual health", "socialising", "support", "LGBTQIA+ rights"],
+      "contact": {
+        "email": "queer@uqu.com.au"
+      },
+      "url": "https://uqu.com.au/uqu-collectives/queer-collective/"
+    },
+    {
+      "id": "student_rights_collective",
+      "name": "UQU Student Rights Collective",
+      "category": "Student Advocacy",
+      "logo": "https://uqu.com.au/wp-content/uploads/2022_01_27_Students-Rights-Collective-2022-Logo_Full-Colour.jpg",
+      "target_group": "All UQ students",
+      "description": "Peak representative body committed to representing and fighting for UQ students' rights to the University, government, and other stakeholders. Run by elected Student Rights Vice Presidents.",
+      "mission": "Representing and advocating on academic and welfare issues, ending student poverty, and improving student welfare",
+      "membership": {
+        "type": "representative",
+        "eligibility": "All UQ students (represented by elected officials)",
+        "governance": "Run by elected Student Rights Vice Presidents"
+      },
+      "services": [
+        "Academic issue advocacy",
+        "Welfare issue representation",
+        "Student poverty alleviation programs",
+        "University policy advocacy",
+        "Government advocacy"
+      ],
+      "initiatives": [
+        "Morning Marmalade (free breakfast program)",
+        "Kampus Kitchen (free dinner program)",
+        "Food Co-Op (discounted groceries)",
+        "Placement Bursaries for students in poverty",
+        "Student exam support services"
+      ],
+      "advocacy_targets": [
+        "University of Queensland",
+        "Government",
+        "Other stakeholders"
+      ],
+      "activities": [
+        "Monthly progress reports",
+        "Media engagement",
+        "Policy advocacy",
+        "Welfare program management"
+      ],
+      "media_presence": [
+        "ABC Radio National appearances",
+        "Student debt and education cost advocacy"
+      ],
+      "interests": ["student rights", "welfare advocacy", "academic support", "poverty alleviation", "policy reform"],
+      "url": "https://uqu.com.au/uqu-collectives/uqu-student-rights-collective/"
+    },
+    {
+      "id": "womens_collective",
+      "name": "UQU Women's Collective",
+      "category": "Identity & Advocacy",
+      "logo": "https://uqu.com.au/wp-content/uploads/UQUWomensCollective_Logo-colour.jpg",
+      "target_group": "Women and non-binary students",
+      "description": "Autonomous feminist group representing and advocating for women on campus through events, campaigns, and consciousness-raising. Non-affiliated with political parties or external organizations.",
+      "mission": "Represent and advocate for women on campus, engage people with feminist theory, raise consciousness, and have fun",
+      "membership": {
+        "type": "open",
+        "eligibility": "All UQ students who identify as women or non-binary",
+        "fees": "None specified"
+      },
+      "services": [
+        "Women's advocacy and representation",
+        "Feminist education and theory engagement",
+        "Consciousness-raising activities",
+        "Campaign development and execution"
+      ],
+      "facilities": {
+        "location": "Room 21D",
+        "hours": "Monday-Friday, 6am-9pm"
+      },
+      "activities": [
+        "Regular meetings to discuss feminist affairs",
+        "International Women's Day Breakfast (annual)",
+        "Small social events",
+        "Networking opportunities",
+        "Educational campaigns on feminist issues"
+      ],
+      "organizational_structure": {
+        "autonomy": "Autonomous group",
+        "affiliations": "Non-affiliated with political parties, external organisations, or values-driven beliefs"
+      },
+      "focus_areas": [
+        "Feminist theory and education",
+        "Women's rights advocacy",
+        "Campus gender equality",
+        "Consciousness-raising"
+      ],
+      "interests": ["advocacy", "education", "socialising", "feminism", "gender equality", "women's rights"],
+      "url": "https://uqu.com.au/uqu-collectives/womens-collective/"
+    }
+  ],
+  "outlets": {
+    "food_beverage": [
+      {
+        "id": "expresso",
+        "name": "Expresso",
+        "category": "Coffee Shop",
+        "type": "food_beverage",
+        "description": "Coffee shop providing caffeine fix for uni students, serving all favorite hot and cold beverages from mochas to matchas.",
+        "cuisine_type": "Beverages",
+        "specialty": "Coffee and specialty drinks",
+        "offerings": [
+          "Hot beverages",
+          "Cold beverages", 
+          "Mochas",
+          "Matchas",
+          "Specialty coffee drinks"
+        ],
+        "target_audience": "Students needing caffeine fix",
+        "operating_status": "Open",
+        "mates_rates": true,
+        "discounts": "10% off with Mates Rates membership",
+        "location": "On campus",
+        "url": "https://uqu.com.au/food-retail-outlets/expresso/"
+      },
+      {
+        "id": "on_a_roll_bakery",
+        "name": "On A Roll Bakery",
+        "category": "Bakery & Café",
+        "type": "food_beverage",
+        "description": "Daily stop for coffee and breakfast bites, stocked with gourmet pies, pastries, toasties, fresh wraps, sweet treats, and desserts.",
+        "cuisine_type": "Bakery items, Coffee",
+        "specialty": "Gourmet pies and fresh baked goods",
+        "offerings": [
+          "Coffee",
+          "Gourmet pies",
+          "Pastries",
+          "Toasties",
+          "Fresh wraps",
+          "Sweet treats",
+          "Desserts",
+          "Breakfast items"
+        ],
+        "meal_times": ["Breakfast", "Lunch", "Snacks"],
+        "operating_status": "Open",
+        "mates_rates": true,
+        "discounts": "10% off with Mates Rates membership",
+        "location": "On campus",
+        "url": "https://uqu.com.au/food-retail-outlets/on-a-roll-bakery/"
+      },
+      {
+        "id": "pizza_caffe",
+        "name": "Pizza Caffe",
+        "category": "Pizza Restaurant",
+        "type": "food_beverage",
+        "description": "UQ institution since 1992, famous for thin crispy bases and artisan pizzas. Perfect place to catch up with friends over hot pizza and cold beer.",
+        "cuisine_type": "Italian (Pizza)",
+        "specialty": "Artisan pizzas with thin crispy bases",
+        "established": "1992",
+        "offerings": [
+          "Artisan pizzas",
+          "Premium ingredients",
+          "Cold beer",
+          "Sides",
+          "Soft drinks"
+        ],
+        "meal_times": ["Lunch", "Dinner"],
+        "special_services": {
+          "bulk_orders": {
+            "minimum": "15 pizzas",
+            "advance_notice": "24 hours",
+            "pickup_time": "From 11am on trading days",
+            "contact": "pizzacaffe@uqu.com.au",
+            "includes": "All menu items including sides and soft drinks"
+          }
+        },
+        "operating_status": "Open",
+        "mates_rates": true,
+        "discounts": "10% off with Mates Rates membership",
+        "atmosphere": "Social dining with friends",
+        "alcohol_service": true,
+        "location": "On campus",
+        "url": "https://uqu.com.au/food-retail-outlets/pizza-caffe/"
+      },
+      {
+        "id": "redroom",
+        "name": "REDROOM",
+        "category": "Student Bar",
+        "type": "food_beverage",
+        "description": "The student bar and social hub. Currently closed for maintenance (asbestos removal) and will reopen in 2025. Known for famous beer battered chips and bar atmosphere.",
+        "cuisine_type": "Bar food",
+        "specialty": "Famous beer battered chips",
+        "offerings": [
+          "Bar food (from 5PM)",
+          "Famous beer battered chips",
+          "Alcoholic beverages"
+        ],
+        "meal_times": ["Dinner", "Late night"],
+        "operating_status": "Closed for maintenance",
+        "closure_reason": "Safe removal of asbestos in preparation for complex redevelopment",
+        "reopening": "2025",
+        "atmosphere": "Social bar environment",
+        "entertainment": [
+          "Live DJs",
+          "Trivia Tuesdays", 
+          "Pool tables"
+        ],
+        "mates_rates": true,
+        "alcohol_service": true,
+        "contact": {
+          "email": "redroom@uqu.com.au",
+          "social_media": {
+            "instagram": "https://www.instagram.com/redroomuqu/",
+            "facebook": "https://www.facebook.com/redroombarandgrill/"
+          }
+        },
+        "menu_link": "https://uqu.com.au/wp-content/uploads/2024_01_11_REDROOM-Bistro-Small-Menu_A5_converted.pdf",
+        "location": "Union Complex (currently closed)",
+        "url": "https://uqu.com.au/food-retail-outlets/redroom/"
+      },
+      {
+        "id": "main_course",
+        "name": "Main Course",
+        "category": "Food Court",
+        "type": "food_beverage",
+        "description": "Long-standing go-to for fast, fresh, tasty, and healthy meals on campus at affordable prices. Large variety with all meals prepared and cooked fresh daily.",
+        "cuisine_type": "International variety",
+        "specialty": "Fresh, healthy, affordable meals",
+        "offerings": [
+          "Sandwiches",
+          "Salads", 
+          "Wraps",
+          "Bento boxes",
+          "Burgers",
+          "Noodles",
+          "Fish and chips",
+          "Cold drinks",
+          "Snacks"
+        ],
+        "meal_times": ["Breakfast", "Lunch", "Dinner", "Snacks"],
+        "food_preparation": "All meals prepared and cooked fresh daily",
+        "price_point": "Affordable",
+        "portion_options": ["Substantial meals", "Light snacks"],
+        "operating_status": "Open",
+        "mates_rates": true,
+        "discounts": "10% off with Mates Rates membership",
+        "location": "On campus",
+        "url": "https://uqu.com.au/food-retail-outlets/main-course/"
+      },
+      {
+        "id": "darwins",
+        "name": "Darwin's",
+        "category": "Café",
+        "type": "food_beverage",
+        "description": "Perfect spot for grab-and-go lunch or relaxed coffee with study buddies or colleagues. Ideal for enjoying sandwiches and lattes during uni breaks.",
+        "cuisine_type": "Café food",
+        "specialty": "Coffee and sandwiches",
+        "offerings": [
+          "Coffee (lattes mentioned)",
+          "Sandwiches",
+          "Grab-and-go lunch options"
+        ],
+        "meal_times": ["Breakfast", "Lunch", "Coffee breaks"],
+        "atmosphere": "Relaxed social environment",
+        "seating_options": ["Grab-and-go", "Sit-down with friends"],
+        "target_audience": "Students, study groups, colleagues",
+        "operating_status": "Open",
+        "mates_rates": true,
+        "discounts": "10% off with Mates Rates membership",
+        "location": "On campus",
+        "url": "https://uqu.com.au/food-retail-outlets/darwins/"
+      },
+      {
+        "id": "lolly_shop",
+        "name": "Lolly Shop",
+        "category": "Confectionery & Snacks",
+        "type": "food_beverage",
+        "description": "Treating UQ students since 1981. Favorite for afternoon sugar fix with pick & mix lollies, exclusive gourmet products, and variety of snacks.",
+        "cuisine_type": "Confectionery and snacks",
+        "specialty": "Pick & mix lollies and gourmet confectionery",
+        "established": "1981",
+        "offerings": [
+          "Pick & mix lollies",
+          "Fluffy Crunch flavoured fairy floss",
+          "Flavoured popcorn",
+          "Flavoured marshmallows", 
+          "Premium chocolate",
+          "Savoury snacks",
+          "Instant noodles",
+          "Cold drinks",
+          "Ice creams"
+        ],
+        "exclusive_products": [
+          "Fluffy Crunch flavoured fairy floss",
+          "Range of flavoured popcorn",
+          "Flavoured marshmallows"
+        ],
+        "current_specials": {
+          "kinder_chocolate": "3 for $3.50 (21g)",
+          "hubba_bubba": "$1.50 each",
+          "tnt_sour": "Any 2 for $4 (57g Strap & Stick)"
+        },
+        "meal_times": ["Snacks", "All day"],
+        "operating_status": "Open",
+        "mates_rates": true,
+        "discounts": "10% off with Mates Rates membership",
+        "location": "On campus",
+        "url": "https://uqu.com.au/food-retail-outlets/lolly-shop/"
+      },
+      {
+        "id": "lawes_club",
+        "name": "Lawes Club",
+        "category": "Student Bar",
+        "type": "food_beverage",
+        "description": "Student bar at Gatton campus for unwinding, catching up with friends and having fun. Features weekly themed dress-up parties.",
+        "cuisine_type": "Bar beverages",
+        "specialty": "Student social events and themed parties",
+        "campus": "Gatton",
+        "operating_schedule": {
+          "day": "Wednesday",
+          "hours": "8pm to midnight"
+        },
+        "special_features": [
+          "Different dress-up party theme each week",
+          "Themed events (e.g., 'Aussie Icons', 'Anything Goes But Clothes')"
+        ],
+        "atmosphere": "Fun, themed party environment",
+        "operating_status": "Open",
+        "alcohol_service": true,
+        "social_media": {
+          "facebook": "https://www.facebook.com/uqulawesclub",
+          "instagram": "https://www.instagram.com/uqunion_gatton/"
+        },
+        "location": "Gatton campus",
+        "url": "https://uqu.com.au/food-retail-outlets/lawes-club/"
+      }
+    ],
+    "services": [
+      {
+        "id": "microwave_rooms",
+        "name": "Microwave Rooms",
+        "category": "Student Utility",
+        "type": "service",
+        "description": "Four microwave rooms provided by UQU for students to heat up lunch, make noodles, with hot water and sinks available.",
+        "facilities": [
+          "Microwaves",
+          "Hot water", 
+          "Sinks"
+        ],
+        "quantity": "Four locations on campus",
+        "purpose": "Food heating and preparation",
+        "target_audience": "All students",
+        "cost": "Free to use",
+        "operating_status": "Open",
+        "location": "Four locations across campus",
+        "url": "https://uqu.com.au/food-retail-outlets/microwave-rooms/"
+      },
+      {
+        "id": "schonell_catering_events",
+        "name": "Schonell Catering & Events",
+        "category": "Professional Catering",
+        "type": "service",
+        "description": "Preferred catering supplier for University of Queensland offering contemporary catering for various events from small morning teas to large weddings.",
+        "services": [
+          "Student events catering",
+          "Meeting catering",
+          "Conference catering", 
+          "Seminar catering",
+          "Dinner events",
+          "Cocktail events",
+          "Wedding catering",
+          "Morning tea catering"
+        ],
+        "event_sizes": ["Small morning teas", "Large student events"],
+        "location_options": ["On-campus", "Off-campus"],
+        "room_hire": "Available within UQ Union Complex",
+        "certifications": [
+          "5-star Eat Safe venue",
+          "Fully compliant with Food Safety Standards"
+        ],
+        "package_options": "Bespoke catering packages to suit event needs and budget",
+        "menu_link": "https://www.schonellevents.com.au/catering",
+        "operating_status": "Open",
+        "target_audience": "Event organizers, university functions",
+        "location": "UQ Union Complex and off-site",
+        "url": "https://uqu.com.au/food-retail-outlets/schonell-catering-events/"
+      }
+    ],
+    "retail_markets": [
+      {
+        "id": "op_shop",
+        "name": "Op Shop",
+        "category": "Thrift Store",
+        "type": "retail",
+        "description": "Budget-friendly retail shopping with pre-loved clothing, accessories, books, and magazines. No longer accepting donations as of November 29, 2024.",
+        "offerings": [
+          "Pre-loved clothing",
+          "Accessories",
+          "Books",
+          "Magazines"
+        ],
+        "price_point": "Budget-friendly",
+        "donation_status": "No longer accepting donations (as of Nov 29, 2024)",
+        "alternative_donation_locations": [
+          "Yesterday's Thrift Shop Indooroopilly",
+          "Salvos Stores Indooroopilly", 
+          "Vinnies Coorparoo",
+          "Vinnies Paddington",
+          "Link Vision Coorparoo Op Shop"
+        ],
+        "social_media": {
+          "instagram": "https://instagram.com/uquopshop",
+          "tiktok": "https://tiktok.com/@uquopshop"
+        },
+        "operating_status": "Open",
+        "mates_rates": true,
+        "discounts": "10% off with Mates Rates membership",
+        "location": "On campus",
+        "url": "https://uqu.com.au/food-retail-outlets/op-shop/"
+      },
+      {
+        "id": "wednesday_markets",
+        "name": "Wednesday Markets", 
+        "category": "Weekly Market",
+        "type": "market_event",
+        "description": "Weekly markets every Wednesday at Campbell Place featuring various stalls with flowers, fashion, handmade jewelry, succulents, and gifts.",
+        "schedule": {
+          "day": "Every Wednesday",
+          "location": "Campbell Place"
+        },
+        "offerings": [
+          "Beautiful flowers",
+          "Fashion items",
+          "Handmade jewelry",
+          "Succulents",
+          "Sunglasses", 
+          "Gifts"
+        ],
+        "stall_application": {
+          "contact": "markets@uqu.com.au",
+          "form": "https://uqu.typeform.com/Wed-Markets-App"
+        },
+        "atmosphere": "Social market environment",
+        "target_audience": "Students, staff, community",
+        "operating_status": "Open",
+        "location": "Campbell Place",
+        "url": "https://uqu.com.au/food-retail-outlets/wednesday-markets/"
+      },
+      {
+        "id": "uqu_etc",
+        "name": "UQU ETC.",
+        "category": "University Retail",
+        "type": "retail",
+        "description": "One-stop shop for all uni needs selling UQU merchandise, stationery, phone accessories, lab coats, USBs, calculators, and graduation gifts.",
+        "offerings": [
+          "UQU merchandise (hoodies, snow globes)",
+          "Stationery",
+          "Phone accessories",
+          "Lab coats",
+          "USBs",
+          "Calculators", 
+          "Graduation gifts"
+        ],
+        "specialty": "University-specific merchandise and supplies",
+        "target_audience": "Students, graduates, university community",
+        "operating_status": "Open",
+        "mates_rates": true,
+        "discounts": "10% off with Mates Rates membership",
+        "location": "On campus",
+        "url": "https://uqu.com.au/food-retail-outlets/uqu-etc/"
+      }
+    ]
+  },
+  "support_services": {
+    "student_advocacy_support": {
+      "id": "sas",
+      "name": "Student Advocacy & Support (SAS)",
+      "description": "Free, independent hub of support empowering every student to feel and do their best beyond academics",
+      "characteristics": [
+        "Free of charge",
+        "Independent", 
+        "Judgement-free",
+        "Confidential"
+      ],
+      "booking_system": "https://supporting-u.uqu.com.au/students/login",
+      "eligibility": "Currently enrolled UQ undergraduate and postgraduate students only",
+      "limitations": [
+        "One appointment per week per student",
+        "24-hour cancellation required",
+        "Repeat cancellations/no-shows may result in ineligibility",
+        "Does not provide counselling support"
+      ],
+      "referrals": {
+        "counselling": "Student Services (07) 3365 1704",
+        "mental_health_plan": "GP can create Mental Health Treatment Plan", 
+        "headspace": "Local Headspace Centre available"
+      },
+      "appointment_types": {
+        "welfare_wellbeing": {
+          "description": "Support for difficulties at home or university",
+          "services": [
+            "Strategies for coping with stress",
+            "Centrelink information",
+            "Creating social connections and navigating university life",
+            "Life hacks & tips for self care",
+            "Financial assistance",
+            "Sexual misconduct support",
+            "General wellbeing"
+          ]
+        },
+        "academic_support": {
+          "description": "Get studies back on track and navigate workload",
+          "services": [
+            "Appeals",
+            "Grievance/complaints resolution",
+            "Student misconduct allegations",
+            "Re-marks & assessment issues",
+            "Removal of course",
+            "Progression intervention notices"
+          ]
+        },
+        "job_preparation": {
+          "description": "Employment assistance and career preparation",
+          "services": [
+            "How to apply for part-time/casual jobs",
+            "Resume & cover letter assistance",
+            "Mock interview practice"
+          ]
+        },
+        "legal_support": {
+          "description": "Legal assistance with solicitor available",
+          "services": [
+            "Intellectual property issues",
+            "Civil disputes",
+            "Consumer complaints",
+            "General legal advice/referrals",
+            "Residential tenancy matters",
+            "Motor vehicle accidents",
+            "Family law matters"
+          ]
+        },
+        "visa_support": {
+          "description": "Confidential advice for international students on education and visa enquiries",
+          "services": [
+            "UQ Enrolment related Visa issues",
+            "Student Visa emergency assistance",
+            "Student Visa extensions",
+            "General student Visa enquiries"
+          ]
+        }
+      },
+      "bursaries": {
+        "emergency_financial_support": {
+          "name": "SAS Emergency Financial Support",
+          "description": "One-off payment to alleviate financial pressures and facilitate better study engagement",
+          "application_process": "Book welfare appointment with SAS advocate",
+          "availability": "Any time of year",
+          "eligibility": [
+            "Current UQ student",
+            "Experiencing extenuating circumstances impacting financial stability",
+            "Provide evidence of financial hardship"
+          ],
+          "assessment_criteria": [
+            "Current income (employment, Centrelink, scholarships, other)",
+            "Current expenses (rent, bills, unexpected expenses)",
+            "Personal circumstances (dependents, income impact from studies, large unexpected expenses)"
+          ],
+          "evidence_required": [
+            "Invoices showing unexpected/large expenses",
+            "List of current living expenses"
+          ],
+          "use_cases": [
+            "Large or unexpected expenses causing financial distress",
+            "Usual expenses unable to pay due to extenuating circumstances", 
+            "Items necessary for completing studies",
+            "Other reasonable study-related needs"
+          ]
+        },
+        "placement_bursary": {
+          "name": "UQU Placement Bursary",
+          "status": "Closed for current applications",
+          "description": "Financial support for students facing hardship from decreased work hours during compulsory placement",
+          "next_application_period": {
+            "opens": "Monday 17 February 2025 at 12am",
+            "closes": "Monday 10 March 2025 at 9am"
+          },
+          "eligibility": [
+            "Current enrolled UQ student (undergraduate or postgraduate)",
+            "Undertaking placement in Semester 1, 2025",
+            "Experiencing extenuating circumstances impacting financial stability during placement"
+          ],
+          "assessment_criteria": [
+            "Current income and expenses",
+            "Personal circumstances (relocation needs, income impact, disability considerations)",
+            "Placement-related expenses (transport, uniforms, equipment)"
+          ],
+          "evidence_required": {
+            "compulsory": [
+              "Bank statements for previous 3 months showing income and expenses",
+              "Letters confirming placement"
+            ],
+            "additional": [
+              "Invoices for unexpected/large expenses impacting placement period"
+            ]
+          }
+        },
+        "gender_affirmation_bursary": {
+          "name": "UQU Queer Collective - Gender Affirmation Bursary", 
+          "sponsor": "UQU Queer Collective",
+          "description": "Small one-off payment for gender affirming items, products, services, and care",
+          "application_process": "Book welfare appointment with SAS (Zoom or in-person)",
+          "availability": "Any time of year",
+          "eligibility": "Current UQ student experiencing financial hardship",
+          "examples": [
+            "Binders, gaffs, packers, and other gender affirming wear",
+            "Hormones/HRT",
+            "Clothing",
+            "Medical appointments",
+            "Voice training",
+            "Legal name changes",
+            "Anything relating to gender affirmation"
+          ],
+          "evidence_required": [
+            "Bank statements for previous 3 months",
+            "Centrelink statements",
+            "Evidence of personal circumstances",
+            "List of current living expenses"
+          ]
+        },
+        "international_hdr_family_bursary": {
+          "name": "UQU International Collective - International HDR Student Family Life Assistance Bursary",
+          "status": "Closed",
+          "sponsor": "UQU International Collective",
+          "target_group": "International students in MPhil and PhD programmes",
+          "description": "One-off welfare relief for research students with families to focus on academic pursuits",
+          "assessment_panel": [
+            "UQU International Officers (Chair)",
+            "UQU Postgraduate Officers", 
+            "APS President (HDR)"
+          ],
+          "eligibility": [
+            "Current enrolled UQ HDR program student",
+            "International student",
+            "Experiencing financial hardship",
+            "Provide evidence of financial hardship"
+          ],
+          "assessment_criteria": [
+            "Current income and expenses",
+            "Personal circumstances including number of dependents"
+          ]
+        }
+      }
+    },
+    "welfare_wellbeing_resources": {
+      "id": "welfare_resources",
+      "name": "Welfare & Wellbeing Resources",
+      "description": "Collection of resources, tips, tricks and life hacks for student life navigation",
+      "resource_categories": {
+        "self_care_wellness": [
+          {
+            "title": "Self-Care for When You're Short on Time",
+            "description": "Self-care strategies for busy students to improve mental and physical health"
+          },
+          {
+            "title": "Self-Care Strategies Guide", 
+            "description": "Enhance physical, mental and emotional wellbeing with resilience strategies"
+          },
+          {
+            "title": "Everyday Mindfulness Exercises",
+            "description": "Beginner and intermediate mindfulness exercises with easy-to-follow examples"
+          },
+          {
+            "title": "Outdoor Mindfulness Exercises",
+            "description": "Relaxing exercises for connecting with surroundings and disconnecting from screens"
+          }
+        ],
+        "financial_survival": [
+          {
+            "title": "Financial Survival Tips for Students",
+            "description": "Quick and easy changes to reduce financial strain and manage budgets"
+          },
+          {
+            "title": "Tips to Slash Your Grocery Bill",
+            "description": "Strategies from generic brands to cash shopping for reducing food expenses"
+          },
+          {
+            "title": "Five Tips for Balancing Study and Work",
+            "description": "Essential guidance for managing casual/part-time work alongside studies"
+          }
+        ],
+        "food_nutrition": [
+          {
+            "title": "No Fuss Feeds",
+            "description": "Digital cookbooks with easy, quick, cheap, tasty recipes from School of Dietetics for breakfast, lunch, dinner and snacks"
+          }
+        ],
+        "academic_support": [
+          {
+            "title": "Appeals Process to the Student Academic Administrative Appeals Committee (SAAAC)",
+            "description": "Guide to typical process and best practices for SAAAC appeals"
+          },
+          {
+            "title": "FAQs: Lodging Appeals to SAAAC", 
+            "description": "Answers to common questions about writing and lodging SAAAC appeals"
+          }
+        ],
+        "job_preparation": [
+          {
+            "title": "Working in Australia",
+            "description": "Essential preparation guide for international students seeking employment"
+          },
+          {
+            "title": "Writing a Resume",
+            "description": "Template and tips for creating resumes reflecting unique skills and experience"
+          },
+          {
+            "title": "Writing a Cover Letter",
+            "description": "Guide to writing compelling cover letters that increase interview chances"
+          },
+          {
+            "title": "Interview Skills",
+            "description": "Different interview types, preparation strategies, and mock interview availability through SAS"
+          }
+        ],
+        "health_safety": [
+          {
+            "title": "Impacts of Social Media on Mental Health",
+            "description": "Pros and cons analysis with suggestions for healthy social media interaction"
+          },
+          {
+            "title": "What Does LGBTQIA+ Mean?",
+            "description": "Key terms guide for LGBTQIA+ community including Australian Indigenous terms"
+          },
+          {
+            "title": "International Students Handbook",
+            "description": "Complete guide to finding footing at UQ and living in Brisbane including transport, groceries, work, healthcare"
+          }
+        ]
+      },
+      "external_support_contacts": {
+        "mental_health": [
+          {
+            "name": "Black Dog Institute",
+            "service": "myCompass - customisable self help tool",
+            "target": "Mild to moderate depression, anxiety and stress",
+            "access": "Free, mobile/computer-based"
+          },
+          {
+            "name": "Beyond Blue", 
+            "phone": "1300 22 4636",
+            "service": "24/7 support service with trained mental health professionals",
+            "features": ["One-on-one confidential calls", "Online forums", "Information and resources"]
+          },
+          {
+            "name": "Kids Help Line",
+            "target": "5 to 25 year olds",
+            "service": "Free confidential telephone and webchat counselling",
+            "features": ["Games and activities", "Informative articles", "Group chats"]
+          },
+          {
+            "name": "Lifeline Australia",
+            "phone": "13 11 14",
+            "service": "24/7 crisis support and suicide prevention"
+          },
+          {
+            "name": "QLife",
+            "service": "LGBTI peer support and referral service"
+          }
+        ],
+        "centrelink_support": [
+          {
+            "name": "Basic Rights Queensland (BRQ)",
+            "service": "Free advice, advocacy, and legal services state-wide by telephone",
+            "specialties": ["Social security", "Disability discrimination", "Employment issues"],
+            "website": "https://brq.org.au/help-with-centrelink/"
+          }
+        ],
+        "sexual_health": [
+          {
+            "name": "UQ Health Care",
+            "locations": ["St. Lucia", "Gatton"],
+            "website": "https://www.uqhealthcare.org.au/"
+          },
+          {
+            "name": "Queensland Health Sexual Health Clinics",
+            "website": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures/sex-health/services"
+          },
+          {
+            "name": "True - Relationships and reproductive health",
+            "description": "Queensland's Family Planning Association",
+            "website": "https://www.true.org.au/clinic"
+          }
+        ],
+        "cyber_security": [
+          {
+            "name": "ID Care",
+            "service": "Free expert support for identity and cyber security concerns",
+            "website": "https://www.idcare.org/"
+          }
+        ]
+      },
+      "emergency_contacts": {
+        "emergency": "000 - Ambulance, fire, police",
+        "lifeline": "13 11 14 - Emotional distress support", 
+        "poisons": "13 11 26 - Poisons information",
+        "police_non_emergency": "131 444 - Non-urgent police matters",
+        "health_advice": "13 43 25 84 - Health advice",
+        "ses": "132 500 - Storm and flood assistance",
+        "domestic_violence": "1800 811 811 - Domestic Violence Connect",
+        "respect": "1800 737 732 - 1800 RESPECT confidential counselling"
+      },
+      "rapid_testing": {
+        "service": "Free HIV, syphilis, chlamydia and gonorrhoea testing",
+        "partner": "Rapid.org.au",
+        "features": ["Pain free", "Confidential", "No needles", "Same day results", "No booking required"],
+        "locations": {
+          "st_lucia": {
+            "location": "UQU Reception (Level 4, Building 21A)",
+            "schedule": "Every Thursday 9am-3:00pm"
+          },
+          "gatton": {
+            "location": "UQU SAS, Morrison Hall (Room 233)",
+            "schedule": "Select Mondays - check schedule"
+          }
+        }
+      }
+    },
+    "student_exam_support": {
+      "id": "ses",
+      "name": "Student Exam Support (SES)",
+      "description": "Comprehensive support program during exam periods with food, activities, and wellbeing support",
+      "social_media": "https://www.instagram.com/UQUnion/",
+      "emergency_contact": {
+        "name": "SES Freak-Out Phone",
+        "phone": "0404 106 173",
+        "availability": "ONLY during UQ exam weeks 7:30am-6:30pm"
+      },
+      "exam_periods": {
+        "swotvac": {
+          "name": "SWOTVAC",
+          "dates": "Monday 2 June – Friday 6 June",
+          "daily_activities": {
+            "morning_marmalade": {
+              "time": "8AM-9.30AM",
+              "location": "Union Complex"
+            },
+            "food_trucks": {
+              "time": "8AM-2PM & 4PM-9PM", 
+              "location": "Campbell Place"
+            },
+            "retreat_room": {
+              "time": "All day",
+              "location": "Holt Room"
+            },
+            "lawn_games_communitea": {
+              "time": "10AM-4PM",
+              "location": "Grassy Knoll"
+            },
+            "red_bull_sampling": {
+              "time": "10AM-11AM",
+              "location": "St Lucia libraries"
+            },
+            "sausage_sizzle": {
+              "time": "12PM-2PM",
+              "location": "Central Sizzle"
+            },
+            "massage_sessions": {
+              "time": "3PM-5PM",
+              "location": "Holt Room"
+            },
+            "kampus_kitchen": {
+              "time": "5PM-6PM",
+              "location": "Union Complex"
+            },
+            "library_trolley_snacks": {
+              "time": "7PM",
+              "location": "St Lucia libraries"
+            },
+            "iseecare_coffee_cart": {
+              "time": "6.30PM-8.30PM",
+              "location": "Forgan Smith Lawns"
+            }
+          },
+          "special_activities": [
+            {
+              "name": "Late Night Pancakes",
+              "time": "7.45PM-10PM",
+              "location": "Central Sizzle",
+              "days": ["Tuesday", "Friday"]
+            },
+            {
+              "name": "Red Bull Study Room", 
+              "time": "10AM-3PM",
+              "location": "Holt Room",
+              "days": ["Tuesday", "Wednesday"]
+            },
+            {
+              "name": "Disability Collective Study Session",
+              "time": "10AM-2PM", 
+              "location": "Duhig Tower Collaborative Room",
+              "days": ["Wednesday"]
+            }
+          ]
+        },
+        "exam_week_1": {
+          "name": "Exam Week 1",
+          "dates": "Monday 9 June – Friday 13 June",
+          "daily_activities": {
+            "morning_marmalade": {
+              "time": "8AM-9.30AM",
+              "location": "Union Complex"
+            },
+            "food_trucks": {
+              "time": "8AM-2PM & 4PM-9PM",
+              "location": "Campbell Place"
+            },
+            "retreat_room": {
+              "time": "All day", 
+              "location": "Holt Room"
+            },
+            "lawn_games_communitea": {
+              "time": "10AM-4PM",
+              "location": "Grassy Knoll"
+            },
+            "kampus_kitchen": {
+              "time": "5PM-6PM",
+              "location": "Union Complex"
+            },
+            "library_trolley_snacks": {
+              "time": "7PM",
+              "location": "St Lucia libraries"
+            },
+            "iseecare_coffee_cart": {
+              "time": "Variable times",
+              "location": "Forgan Smith Lawns"
+            }
+          }
+        },
+        "exam_week_2": {
+          "name": "Exam Week 2", 
+          "dates": "Monday 16 June – Friday 20 June",
+          "daily_activities": {
+            "morning_marmalade": {
+              "time": "8AM-9.30AM",
+              "location": "Union Complex"
+            },
+            "food_trucks": {
+              "time": "8AM-2PM & 4PM-9PM",
+              "location": "Campbell Place"
+            },
+            "retreat_room": {
+              "time": "All day",
+              "location": "Holt Room"
+            },
+            "lawn_games_communitea": {
+              "time": "10AM-4PM",
+              "location": "Grassy Knoll"
+            },
+            "kampus_kitchen": {
+              "time": "5PM-6PM",
+              "location": "Union Complex"
+            }
+          }
+        }
+      },
+      "food_trucks": {
+        "day_session": "8AM-2PM",
+        "evening_session": "4PM-9PM",
+        "location": "Campbell Place",
+        "vendors": [
+          "Dippin' Dots Ice Cream", "Oh Waffles", "The Cairo Eatery", "Wurst-Meister",
+          "OMG! Donuts", "Ruby Ice Cream", "Micasa Burger Truck", "Rolli Poli Takoyaki",
+          "J'adore Les Crepes", "Mr Tokyo Dog", "Popcorn Man", "Little Mamak",
+          "Something Sweet Gelato", "CharKor BBQ", "Yum Yum East", "Rolls Pho Mi",
+          "Potato Slinky", "That Greek Truck"
+        ]
+      },
+      "exam_faqs": {
+        "student_id": {
+          "question": "If I forget my student ID card, am I still able to enter the exam room?",
+          "answer": "You can get a temporary ID card from Student Central before your exam if you have a photograph on file. Student Central runs extended hours and is open at least 30 minutes before exam start times."
+        },
+        "late_arrival": {
+          "question": "What happens if I am late for the exam?", 
+          "answer": "You can enter up to 60 minutes after start time but get no additional time. If your reason meets deferred exam criteria, you may choose to apply for a deferred exam instead."
+        },
+        "illness_during_exam": {
+          "question": "What happens if I get sick during an exam and can't finish?",
+          "answer": "Illness during exam is not acceptable for deferred exam, except for sudden medical conditions requiring immediate attention. You need a medical certificate dated the day of exam detailing suddenness, predisposition, seriousness, and impact on ability to complete exam."
+        },
+        "missed_exam": {
+          "question": "What do I do if I miss my exam?",
+          "answer": "Check if you meet exceptional and unavoidable circumstances criteria. If yes, apply for deferred exam. Inform course coordinator ASAP and make SAS appointment to discuss options."
+        },
+        "exam_supplies": {
+          "question": "What if I forget a pen, pencil, calculator etc?",
+          "answer": "Purchase supplies from UQU ETC (Union Complex, Monday-Friday 9am-3pm) or borrow approved calculators from UQU Reception Level 4 Building 21A during exam periods."
+        },
+        "calculator_approval": {
+          "question": "How do I get my calculator approved?",
+          "answer": "Go to Student Central to get approved sticker. St Lucia: Building 42 (8am-5pm), Gatton: Level 1 N.W Briton Admin Annexe (8.30am-4.30pm)."
+        }
+      }
+    },
+    "food_support": {
+      "id": "food_co_op",
+      "name": "Food Co-Op, Morning Marmalade & Kampus Kitchen",
+      "description": "Welfare initiatives providing free meals and low-cost groceries across UQ campuses",
+      "partner": "SecondBite",
+      "eligibility": "UQ students with valid student ID",
+      "campus_services": {
+        "st_lucia": {
+          "location": "Ground Floor, Union Complex",
+          "services": {
+            "morning_marmalade": {
+              "schedule": "Monday-Friday, 8am-9.30am",
+              "location": "Next to Boost Juice",
+              "menu": {
+                "monday": "Toast",
+                "tuesday": "Yoghurt and muesli cups",
+                "wednesday": "Pancakes", 
+                "thursday": "Yoghurt and muesli cups",
+                "friday": "Toast"
+              }
+            },
+            "kampus_kitchen": {
+              "schedule": "Monday-Friday, 5pm-6pm (or until stocks last)",
+              "location": "Same outlet as Morning Marmalade",
+              "menu": "Changes daily based on donations and SecondBite provisions, posted weekly on Instagram"
+            },
+            "food_co_op": {
+              "schedule": "Monday, Tuesday & Thursday, 10am-2pm",
+              "location": "Opposite pharmacy",
+              "eligibility": "Mates Rates members only (free membership)",
+              "items": [
+                "Cereal", "Pasta", "Rice", "Diced tomato", "Lentils", 
+                "Peanut butter", "Pasta sauce", "& more"
+              ]
+            }
+          }
+        },
+        "gatton": {
+          "location": "Morrison Hall",
+          "services": {
+            "kampus_kitchen": {
+              "schedule": "Tuesdays, 4.30pm-5.30pm (or until stocks last)",
+              "description": "Free frozen meals with microwaves available for heating"
+            },
+            "midday_munchies": {
+              "schedule": "Thursdays, from 12pm", 
+              "description": "Free frozen meals with microwaves available for heating"
+            },
+            "gatton_pantry": {
+              "schedule": "Wednesdays, 4.30pm-5.30pm",
+              "location": "Union Hub, lower floor Morrison Hall",
+              "items": ["Kitchen staples: pasta, rice, noodles, milk", "Period products"]
+            }
+          }
+        },
+        "herston": {
+          "location": "Oral Health Centre, Level 5, Student Hub",
+          "services": {
+            "midday_munchies": {
+              "schedule": "Tuesdays & Thursdays from 12pm"
+            },
+            "kampus_kitchen": {
+              "schedule": "Thursdays, 4.30pm-5.30pm (or until stocks last)"
+            }
+          },
+          "note": "Morning Marmalade does not currently run at Herston"
+        },
+        "dutton_park": {
+          "location": "OutersPACE Level 7 (PACE Building)",
+          "services": {
+            "dutton_park_pantry": {
+              "schedule": "Tuesdays & Thursdays, 2pm-4pm",
+              "items": ["Kitchen staples: pasta, rice, noodles, milk", "Period products"]
+            }
+          }
+        }
+      },
+      "volunteer_opportunities": {
+        "description": "Morning Marmalade & Kampus Kitchen rely on student volunteers",
+        "activities": ["Cooking toast", "Brewing coffee", "General service support"],
+        "commitment": "Flexible - spare hour/month contributions welcome",
+        "impact": "Helps support more students through the services"
+      }
+    }
+  },
+  "events": {
+    "overview": {
+      "description": "Campuses buzzing year-round with events crafted for every taste and interest",
+      "tagline": "Bubble tea workshops, board game nights, beach trips…",
+      "event_philosophy": "Events for every taste and interest",
+      "promotion_channels": {
+        "social_media": {
+          "instagram": "https://www.instagram.com/UQUnion/",
+          "tiktok": "https://www.tiktok.com/@uqunion",
+          "facebook": "https://www.facebook.com/UQUnion/events"
+        },
+        "newsletter": "Email subscription available for first access to upcoming events"
+      }
+    },
+    "recurring_events": [
+      {
+        "id": "wednesday_markets",
+        "name": "Wednesday Markets",
+        "type": "weekly_market",
+        "category": "Shopping & Social",
+        "description": "Campbell Place springs to life as weekly UQU Wednesday Markets take over with stalls of flowers, fashion, handmade jewelry, succulents, and more",
+        "schedule": {
+          "frequency": "Weekly",
+          "day": "Wednesday",
+          "time": "8am-3pm"
+        },
+        "location": {
+          "venue": "Campbell Place",
+          "campus": "St Lucia"
+        },
+        "offerings": [
+          "Beautiful flowers",
+          "Fashion items", 
+          "Handmade jewelry",
+          "Succulents",
+          "Various market goods"
+        ],
+        "cost": "Free to attend, purchase from stallholders",
+        "target_audience": "All students and community",
+        "social_aspect": "Meet with friends and wander through stalls"
+      }
+    ],
+    "signature_events": [
+      {
+        "id": "o_week_2025",
+        "name": "O-Week 2025",
+        "full_name": "Semester 1 Orientation Program 2025",
+        "type": "orientation_program",
+        "category": "Student Orientation",
+        "description": "Comprehensive orientation program for new and returning students to start Semester 1",
+        "schedule": {
+          "frequency": "Semester start",
+          "semester": "Semester 1, 2025"
+        },
+        "more_info": "https://uqu.com.au/uqu-orientation/",
+        "target_audience": "New and returning students",
+        "importance": "Major semester kickoff event"
+      }
+    ],
+    "event_categories": [
+      {
+        "id": "social_cultural",
+        "name": "Social & Cultural",
+        "description": "Events for meeting people and exploring different cultures",
+        "examples": ["Bubble tea workshops", "Cultural festivals", "Social mixers"]
+      },
+      {
+        "id": "academic_professional", 
+        "name": "Academic & Professional",
+        "description": "Events supporting academic success and career development",
+        "examples": ["Resume workshops", "Study sessions", "Industry networking"]
+      },
+      {
+        "id": "wellness_support",
+        "name": "Wellness & Support",
+        "description": "Events focused on mental health, wellbeing, and life skills",
+        "examples": ["Mindfulness sessions", "Financial literacy", "Stress management"]
+      },
+      {
+        "id": "outdoor_adventure",
+        "name": "Outdoor & Adventure",
+        "description": "Get out of the classroom and explore Brisbane and surrounds",
+        "examples": ["Beach trips", "Hiking excursions", "Adventure activities"]
+      },
+      {
+        "id": "gaming_entertainment",
+        "name": "Gaming & Entertainment",
+        "description": "Fun events for gamers and entertainment seekers",
+        "examples": ["Board game nights", "Video game tournaments", "Movie screenings"]
+      },
+      {
+        "id": "cultural_diversity",
+        "name": "Cultural & Diversity",
+        "description": "Celebrating the diverse UQ community",
+        "examples": ["International food festival", "Pride events", "Cultural showcases"]
+      }
+    ]
+  },
+  "clubs": [
+    {
+      "id": "180_degrees_consulting",
+      "name": "180 Degrees Consulting",
+      "full_name": "180 Degrees Consulting UQ",
+      "category": "Faculty",
+      "logo": "https://uqu.com.au/wp-content/uploads/180DC-UQ-White-BG%5EJ-Black-Green-Txt.png",
+      "description": "Student consulting organization providing pro-bono consulting services. Highly intensive program equivalent to completing a fifth course each semester, offering real-world business experience.",
+      "interests": ["consulting", "business", "strategy", "professional development", "teamwork"],
+      "meeting_times": {
+        "team_meetings": "Weekly meetings for project work",
+        "recruitment": "End of February (Semester 1) and end of July (Semester 2)"
+      },
+      "fees": null,
+      "contact": {
+        "social_media": "Instagram, Facebook, LinkedIn"
+      },
+      "location": "Various locations",
+      "membership_requirements": "Application required through portal - resume, study details, motivation statement",
+      "special_features": [
+        "Pro-bono consulting for real clients",
+        "Equivalent workload to fifth university course",
+        "Welcome drinks with primary sponsor",
+        "Team-based project work",
+        "Skills testing and team collaboration focus",
+        "Professional networking opportunities"
+      ],
+      "url": "https://uqu.com.au/clubs-and-societies/180-degrees-consulting/"
+    },
+    {
+      "id": "chess_club_uqcc",
+      "name": "Chess Club (UQCC)",
+      "full_name": "University of Queensland Chess Club",
+      "category": "Hobby/Special Interest",
+      "logo": "https://uqu.com.au/wp-content/uploads/Chess-Club-logo-1391x1536.jpg",
+      "description": "UQ Chess Club welcomes players of all skill levels to regular meetings and chess activities.",
+      "interests": ["chess", "strategy games", "board games", "competition"],
+      "meeting_times": {
+        "regular": "Wednesday afternoons 5pm-7pm"
+      },
+      "fees": null,
+      "contact": {
+        "email": "chess@uqu.com.au",
+        "facebook": "Available on Facebook page"
+      },
+      "location": "Meeting locations vary - check Facebook for updates",
+      "membership_requirements": "Open to all skill levels",
+      "url": "https://uqu.com.au/clubs-and-societies/chess-club-uqcc/"
+    },
+    {
+      "id": "australia_china_youth_association",
+      "name": "Australia-China Youth Association (ACYA)",
+      "full_name": "Australia-China Youth Association",
+      "category": "International",
+      "logo": "https://uqu.com.au/wp-content/uploads/738b5946616c-acya_logo.jpg",
+      "description": "Transnational cultural club with chapters across Australia and China, focusing on Chinese and Australian culture exchange. Three main pillars: People-to-People, Education, and Careers.",
+      "interests": ["Chinese culture", "Australian culture", "cultural exchange", "networking", "career development", "language learning"],
+      "meeting_times": null,
+      "fees": null,
+      "contact": null,
+      "location": "Various locations",
+      "membership_requirements": "Open to all cultures including Vietnamese, Korean, Caucasian and others",
+      "special_features": [
+        "People-to-People: Day trips (60+ members), dining events, games nights",
+        "Education: Language Buddies, Conversation Class, ACE Space, Dumpling Night",
+        "Careers: Industry panels with big-name companies, alumni networking, case consulting competition",
+        "Volunteering with Tzu Chi (food parcels, recycling)",
+        "Host International Ball with BSA, TAISA, UQKISS",
+        "Chapters across Australia and China"
+      ],
+      "url": "https://uqu.com.au/clubs-and-societies/australia-china-youth-association/"
+    },
+    {
+      "id": "queensland_university_musical_society",
+      "name": "Queensland University Musical Society (QUMS)",
+      "full_name": "Queensland University Musical Society",
+      "category": "Performance",
+      "logo": "https://uqu.com.au/wp-content/uploads/8a703323d9a5-qums_logo_vector_colour.pdf.png",
+      "description": "Established in 1912, QUMS is a non-auditioned choir based at UQ, open to both students and the general public. One of the few non-auditioned choirs in Brisbane, performing music from all genres and eras.",
+      "interests": ["choral music", "singing", "classical music", "performance", "community music"],
+      "meeting_times": {
+        "rehearsals": "Wednesday nights 7:00pm-9:30pm",
+        "post_rehearsal": "Coffee every week at local coffee shop or member's house"
+      },
+      "fees": null,
+      "contact": {
+        "youtube": "https://www.youtube.com/@queenslanduniversitymusica3828"
+      },
+      "location": "UQ St Lucia",
+      "membership_requirements": "Non-auditioned, all ages and musical abilities welcome, no UQ affiliation required",
+      "special_features": [
+        "Established 1912",
+        "Two major concerts per year",
+        "Performs at weddings, functions, special events",
+        "End of year carolling at shopping centres, Treasury Casino, Queen Street Mall",
+        "Social events: QUMSians' Day Out, Rehearsal Camps, Post Concert Parties, Academic Dinner",
+        "Rehearsal files provided for home practice",
+        "No music reading ability required - they'll teach you"
+      ],
+      "url": "https://uqu.com.au/clubs-and-societies/queensland-university-musical-society/"
+    },
+    {
+      "id": "effective_altruism_uq",
+      "name": "Effective Altruism UQ (EAUQ)",
+      "full_name": "Effective Altruism University of Queensland",
+      "category": "Social Justice/Political",
+      "logo": "https://uqu.com.au/wp-content/uploads/EA-logo.png",
+      "description": "Community focused on using resources to help others as effectively as possible through evidence-based charitable decisions, rational thinking, and global compassion. Connected to the global EA movement.",
+      "interests": ["effective altruism", "charity", "rational thinking", "global compassion", "evidence-based giving", "social impact"],
+      "meeting_times": null,
+      "fees": null,
+      "contact": {
+        "resources": [
+          "GiveWell.org",
+          "AnimalCharityEvaluators.org", 
+          "RTCharity.org"
+        ],
+        "affiliated_orgs": [
+          "EffectiveAltruism.org.au",
+          "GivingWhatWeCan.org",
+          "80000Hours.org"
+        ]
+      },
+      "location": "Various locations",
+      "membership_requirements": "Open to those interested in effective charitable action",
+      "special_features": [
+        "Guest speaker-led discussions",
+        "Meet-and-greet debates",
+        "Charity games",
+        "Networking events",
+        "Skill-building workshops",
+        "Connected to global EA movement",
+        "Supported by GiveWell, 80,000 Hours, EA Australia, Centre for Effective Altruism",
+        "UQ chapter for multiple EA organizations",
+        "Focus on preventing death and suffering now and in the future"
+      ],
+      "url": "https://uqu.com.au/clubs-and-societies/effective-altruism-uq/"
+    }
+  ],
+  "programs": {
+    "mates_rates": {
+      "id": "mates_rates",
+      "name": "Mates Rates",
+      "tagline": "YOUR STUDENT DISCOUNT!",
+      "description": "FREE membership discount program for UQ students providing savings at UQU outlets",
+      "program_details": {
+        "eligibility": "All UQ students",
+        "cost": "FREE membership",
+        "primary_discount": "10% OFF full price purchases",
+        "applies_to": ["UQU food outlets", "UQU drink outlets", "UQU retail outlets"],
+        "additional_benefits": "Other unmissable offers and exclusive deals"
+      },
+      "exclusions": [
+        "Alcohol purchases",
+        "Schonell Catering & Events"
+      ],
+      "product_examples": [
+        "Wake-up coffees",
+        "Tasty lunches",
+        "Pizza",
+        "Parmys"
+      ],
+      "how_to_use": {
+        "signup_process": "Sign up online to access Mates Rates card",
+        "card_format": "Digital wallet card",
+        "usage": "Visit any UQU outlet and present card to start saving"
+      },
+      "support": {
+        "email": "matesrates@uqu.com.au",
+        "help_available": "Account help and general questions",
+        "additional_resources": ["FAQs available", "Terms & Conditions available"]
+      },
+      "integration": {
+        "newsletter": "Sign up available for latest events, freebies & announcements"
+      }
+    },
+    "volunteers": {
+      "id": "volunteers",
+      "name": "UQU Volunteers",
+      "tagline": "Creating an empowered, connected, and supported student community through giving back",
+      "mission": "Give back to student community and make meaningful impact",
+      "program_overview": {
+        "description": "Getting involved with student union through volunteering",
+        "impact": "Volunteers contribute significantly to supporting students",
+        "contribution_philosophy": "No matter how big or small, helps reach and support more UQ students"
+      },
+      "volunteer_opportunities": {
+        "service_areas": [
+          "Morning Marmalade & Kampus Kitchen (serving free breakfast/dinner)",
+          "Library snack distribution during exams",
+          "Various services, initiatives, and events"
+        ],
+        "flexibility": {
+          "commitment_options": "Volunteer a little or a lot",
+          "program_variety": "One particular program or multiple different programs",
+          "schedule": "Whatever works for individual volunteer"
+        },
+        "requirements": [
+          "Passion",
+          "Positive attitude",
+          "Alignment with mission of giving back to student community",
+          "Support for creating inclusive campus"
+        ]
+      },
+      "rewards_recognition": {
+        "tier_1": {
+          "hours": "5-20 hours volunteering",
+          "reward": "Certificate of appreciation"
+        },
+        "tier_2": {
+          "hours": "20 hours or more volunteering", 
+          "reward": "Additional 10% discount through Mates Rates (total 20% off at applicable UQU outlets)"
+        },
+        "tier_3": {
+          "hours": "30 hours or more volunteering",
+          "reward": "Access to Volunteer Job Pathways Program"
+        },
+        "tier_4": {
+          "hours": "70 hours or more volunteering",
+          "reward": "Opportunity to propose community project/program and work with UQU on planning and implementation on UQ Campus"
+        }
+      },
+      "benefits_to_volunteers": {
+        "social_benefits": {
+          "networking": "Connect with other students",
+          "friendship_building": "Build healthy friendships",
+          "diversity_exposure": "Meet people from diverse backgrounds",
+          "skill_development": ["Communication", "Teamwork", "Empathy"]
+        },
+        "personal_development": {
+          "comfort_zone": "Step outside comfort zone",
+          "skill_practice": ["Problem solving", "Organisation", "Planning"],
+          "initiative_taking": "Opportunity to take initiative",
+          "achievement": "Achieve goals and feel part of something bigger"
+        },
+        "professional_benefits": {
+          "soft_skills": "Develop soft skills for future work",
+          "resume_building": "Valuable experience for career development",
+          "pathways_program": "Job Pathways Program access at 30+ hours"
+        },
+        "community_impact": {
+          "purpose": "Know and feel you're part of something bigger",
+          "contribution": "Work helps provide for student community",
+          "support": "Give back to those who need more support",
+          "community_representation": "Represent importance of strong community"
+        }
+      },
+      "testimonial": {
+        "volunteer_name": "Amy Tran",
+        "quote": "Volunteering with UQU has allowed me to step outside my comfort zone and further enhance my soft skills.",
+        "image": "Amy-Tran.webp"
+      },
+      "organizational_values": {
+        "target_volunteers": "Passionate, driven students",
+        "mission_alignment": "Represent mission of giving back to student community",
+        "inclusivity": "Creating inclusive campus where every student feels supported",
+        "flexibility": "Flexible volunteering opportunities to accommodate different schedules"
+      },
+      "integration": {
+        "newsletter": "Sign up available for latest events, freebies & announcements",
+        "connection_to_services": "Direct involvement in UQU's core service delivery"
+      }
+    },
+    "student_media": {
+      "name": "Semper Floreat",
+      "description": "UQ Union's free and independent student newspaper since 1932",
+      "roles_available": ["Writers", "Illustrators", "Photographers", "Poets", "Satirists"],
+      "contact": "semper@uqu.com.au"
+    }
+  },
+  "governance": {
+    "student_executive": {
+      "name": "Student Executive",
+      "description": "Peak student elected body delivering leadership and advocacy to university on students' behalf",
+      "structure": "Elected annually into diverse range of portfolios",
+      "purpose": "Build better experience for all UQ students"
+    },
+    "union_business": {
+      "description": "Online hub for UQU business information",
+      "includes": ["Strategic Plans", "UQ Union Council Ordinary Meeting minutes"],
+      "access_methods": [
+        "https://uqu.com.au/union-business/",
+        "UQ Union Noticeboard Facebook page",
+        "UQ Union reception (Level 4, Building 21A, 8am-4pm)"
+      ]
+    }
+  },
+  "metadata": {
+    "total_collectives": 7,
+    "total_outlets": 13,
+    "total_support_services": 4,
+    "total_clubs_sample": 5,
+    "campuses": ["St Lucia", "Gatton", "Herston", "Dutton Park"],
+    "key_features": {
+      "free_services": "All primary services are free to UQ students",
+      "confidential_support": "SAS provides confidential, judgement-free support",
+      "multi_campus": "Services available across all UQ campuses",
+      "emergency_support": "24/7 crisis contacts and emergency financial assistance",
+      "comprehensive_coverage": "Academic, welfare, legal, visa, career, and food support",
+      "mates_rates_discount": "10% discount program available at most outlets",
+      "volunteer_opportunities": "Extensive volunteering programs with recognition tiers"
+    },
+    "contact_consolidation": {
+      "main_location": "Level 4, Building 21A, University of Queensland, St Lucia",
+      "hours": "8am-4pm",
+      "primary_email_contacts": [
+        "matesrates@uqu.com.au (Mates Rates support)",
+        "semper@uqu.com.au (Student newspaper)",
+        "goorie@uqu.com.au (Goorie Berrimpa)",
+        "queer@uqu.com.au (Queer Collective)",
+        "markets@uqu.com.au (Wednesday Markets)",
+        "redroom@uqu.com.au (REDROOM)",
+        "pizzacaffe@uqu.com.au (Pizza Caffe bulk orders)",
+        "chess@uqu.com.au (Chess Club)"
+      ],
+      "social_media_consolidated": {
+        "instagram": "https://www.instagram.com/UQUnion/",
+        "tiktok": "https://www.tiktok.com/@uqunion",
+        "facebook": "https://www.facebook.com/UQUnion/"
+      },
+      "emergency_contacts": [
+        "0404 106 173 (SES Freak-Out Phone - exam periods)",
+        "000 (Emergency)",
+        "13 11 14 (Lifeline)"
+      ]
+    },
+    "last_updated": "2025-05-24",
+    "source": "University of Queensland Union",
+    "base_url": "https://uqu.com.au/",
+    "data_sources": [
+      "uqu_collectives_json.json",
+      "uqu_outlets_json.json", 
+      "uqu_support_services_json.json",
+      "uqu_additional_sections_json.json",
+      "uqu_events_section_json.json",
+      "uq_clubs_json.json"
+    ]
+  }
+}
